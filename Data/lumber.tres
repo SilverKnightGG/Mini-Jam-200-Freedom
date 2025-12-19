@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ExtractableResource" load_steps=2 format=3 uid="uid://crmmx2muj7cnl"]
+
+[ext_resource type="Script" uid="uid://b267eynj20ibf" path="res://Data/extractable_resource.gd" id="1_2wysk"]
+
+[resource]
+script = ExtResource("1_2wysk")
+name = "Lumber"
+type = 2
+tax_value = 25.0
+metadata/_custom_type_script = "uid://b267eynj20ibf"

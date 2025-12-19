@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ExtractableResource" load_steps=2 format=3 uid="uid://bdym5tlyf455w"]
+
+[ext_resource type="Script" uid="uid://b267eynj20ibf" path="res://Data/extractable_resource.gd" id="1_5ilqm"]
+
+[resource]
+script = ExtResource("1_5ilqm")
+name = "Gold"
+type = 3
+tax_value = 100.0
+town_value = 0.0
+metadata/_custom_type_script = "uid://b267eynj20ibf"

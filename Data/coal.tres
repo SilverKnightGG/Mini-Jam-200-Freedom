@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ExtractableResource" load_steps=2 format=3 uid="uid://db2msnnbs6tea"]
+
+[ext_resource type="Script" uid="uid://b267eynj20ibf" path="res://Data/extractable_resource.gd" id="1_iv36e"]
+
+[resource]
+script = ExtResource("1_iv36e")
+name = "Coal"
+value = 18.0
+metadata/_custom_type_script = "uid://b267eynj20ibf"

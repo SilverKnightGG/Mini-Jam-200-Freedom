@@ -4,6 +4,8 @@ class_name Stage extends Node2D
 var tile_grid: Dictionary[Vector2i, TileInfo] = {}
 @export var grid_size: Vector2i = Vector2i(32, 32)
 
+@onready var town: Node = %Town
+
 
 func get_tile(tile_key: Vector2i) -> TileInfo:
 	return tile_grid.get(tile_key)
