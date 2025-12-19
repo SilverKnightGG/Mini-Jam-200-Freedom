@@ -23,3 +23,17 @@ var quantities: Dictionary[ExtractableResource, float] = {
 	ExtractableResource.MATERIALS: 0.0,
 	ExtractableResource.LUXURY: 0.0
 }
+
+var funds: float = 0.0
+@onready var train: Node = %Train
+
+
+
+
+func get_tax_value(res: ExtractableResource) -> float:
+	return TAX_VALUE_MUPLTIPLIERS[res] * quantities[res]
+
+
+func purchase_item(cost: float, item: Variant):
+	funds -= cost
+	train.receive_item(item)
