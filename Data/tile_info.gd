@@ -1,5 +1,0 @@
-class_name TileInfo extends Resource
-
-
-enum Type {SCENERY, FUEL_RESOURCE, FOOD_RESOURCE, MATERIALS_RESOURCE, LUXURY_RESOURCE, TRACK, STATION}
-var type: Type = Type.SCENERY
