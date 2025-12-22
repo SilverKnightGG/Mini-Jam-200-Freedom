@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpmy675hvaha5"]
+
+[ext_resource type="PackedScene" uid="uid://r38vyovd3owh" path="res://Main Scenes/island_zone.tscn" id="1_ly0q4"]
+
+[node name="GameStage" type="Node"]
+
+[node name="IslandZone" parent="." instance=ExtResource("1_ly0q4")]

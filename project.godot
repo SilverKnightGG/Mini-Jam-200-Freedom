@@ -14,6 +14,10 @@ config/name="Mini Jam 200 Freedom"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Globals="*res://Main Scenes/globals.gd"
+
 [display]
 
 window/size/mode=2

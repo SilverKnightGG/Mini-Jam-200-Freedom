@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://cje4dmsl2xvec"]
+[gd_scene load_steps=3 format=3 uid="uid://cje4dmsl2xvec"]
 
 [ext_resource type="Script" uid="uid://d34avuer3gjsc" path="res://Main Scenes/main.gd" id="1_863cw"]
 
+[sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_863cw"]
+stream_count = 1
+stream_0/volume = 0.0
+
 [node name="Main" type="Node"]
 script = ExtResource("1_863cw")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamSynchronized_863cw")
