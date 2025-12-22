@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://bpmy675hvaha5"]
+[gd_scene load_steps=14 format=3 uid="uid://bpmy675hvaha5"]
 
+[ext_resource type="Script" uid="uid://dnrptxe5iatpb" path="res://Main Scenes/game_stage.gd" id="1_cle82"]
 [ext_resource type="PackedScene" uid="uid://r38vyovd3owh" path="res://Main Scenes/island_zone.tscn" id="1_ly0q4"]
 [ext_resource type="Script" uid="uid://wmuys7t36ugm" path="res://Main Scenes/hourglass_panel.gd" id="2_4q0ay"]
 [ext_resource type="Texture2D" uid="uid://cbnx0cybgjyp7" path="res://Assets/Textures/ui_hourglass_mask_bottom.png" id="2_bv8p3"]
@@ -27,6 +28,7 @@ fill = 1
 fill_from = Vector2(0.5, 0.5)
 
 [node name="GameStage" type="Node"]
+script = ExtResource("1_cle82")
 
 [node name="IslandZone" parent="." instance=ExtResource("1_ly0q4")]
 
