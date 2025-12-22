@@ -7,9 +7,12 @@ enum Game {SPLASH, MAIN_MENU, PAUSE_MENU, PLAYING, GAME_OVER, SUCCESS, CREDITS}
 var game_state: Game = Game.SPLASH
 var paused_state: Game = Game.PLAYING
 
+var can_continue_to_credits: bool = false
+
 #enter
 
 func _enter_splash():
+	can_continue_to_credits = false
 	game_state = Game.SPLASH
 
 
@@ -31,12 +34,14 @@ func _enter_playing():
 func _enter_game_over():
 	game_state = Game.GAME_OVER
 	await Globals.pirate.finished_kneeling
+	can_continue_to_credits = true
 	# TODO show the game_over scene and free the game_stage
 
 
 func _enter_success():
 	game_state = Game.SUCCESS
 	await Globals.pirate.finished_cheering
+	can_continue_to_credits = true
 	# TODO show the success scene and free the game_stage
 
 
@@ -93,7 +98,7 @@ func _input(event: InputEvent) -> void:
 				else:
 					_exit_pause_menu()
 		Game.GAME_OVER:
-			pass
+			pass # We let a brief animation play before automatically showing a scene
 		Game.SUCCESS:
 			pass
 		Game.CREDITS:

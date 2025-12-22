@@ -5,7 +5,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 @onready var parent: Node3D = get_parent()
 
-@export var speed: float = 15.0
+@export var speed: float = 10.0
 @export var turn_speed: float = 30.0
 @export var jump_impulse: float = 7.5
 
@@ -83,10 +83,13 @@ func _physics_process(delta):
 		velocity.y -= gravity * delta
 		if velocity.y < 0.0 and not animation_state == AnimationState.FALLING:
 			animation_state = AnimationState.FALLING
+	elif animation_state == AnimationState.FALLING:
+		animation_state = last_state
 
 	if animation_state == AnimationState.IDLE or animation_state == AnimationState.MOVE:
 		if direction_from_camera:
-			animation_state = AnimationState.MOVE
+			if not animation_state == AnimationState.MOVE:
+				animation_state = AnimationState.MOVE
 			velocity.x = direction_from_camera.x * speed
 			velocity.z = direction_from_camera.z * speed
 			rotation.y = lerp_angle(
@@ -95,7 +98,8 @@ func _physics_process(delta):
 				turn_speed * delta
 			)
 		else:
-			animation_state = AnimationState.IDLE
+			if not animation_state == AnimationState.IDLE:
+				animation_state = AnimationState.IDLE
 			velocity.x = move_toward(velocity.x, 0.0, speed)
 			velocity.z = move_toward(velocity.z, 0.0, speed)
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bpmy675hvaha5"]
+[gd_scene load_steps=15 format=3 uid="uid://bpmy675hvaha5"]
 
 [ext_resource type="Script" uid="uid://dnrptxe5iatpb" path="res://Main Scenes/game_stage.gd" id="1_cle82"]
 [ext_resource type="PackedScene" uid="uid://r38vyovd3owh" path="res://Main Scenes/island_zone.tscn" id="1_ly0q4"]
@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://dpolwdcqkiu7j" path="res://Assets/Textures/ui_hourglass_sand_top.png" id="6_uixb0"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ly0q4"]
-content_margin_left = 4.0
-content_margin_top = 12.0
+content_margin_left = 18.0
+content_margin_top = 24.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uixb0"]
 
@@ -26,6 +26,8 @@ width = 6
 height = 6
 fill = 1
 fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cle82"]
 
 [node name="GameStage" type="Node"]
 script = ExtResource("1_cle82")
@@ -50,18 +52,18 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_uixb0")
 unique_name_in_owner = true
 clip_children = 1
 position = Vector2(31.5, 66.384)
-scale = Vector2(0.25, 0.25)
+scale = Vector2(0.188, 0.25)
 texture = ExtResource("3_uixb0")
 
 [node name="SandFalling" type="CPUParticles2D" parent="UICanvasLayer/HourglassPanel/SandfallAnchorPanel/FallingSandMask"]
 unique_name_in_owner = true
 position = Vector2(1.107544, -81.53775)
 scale = Vector2(4, 4)
-amount = 128
+amount = 512
 texture = SubResource("GradientTexture2D_uixb0")
 emission_shape = 1
 emission_sphere_radius = 5.0
-gravity = Vector2(0, 280)
+gravity = Vector2(0, 70)
 scale_amount_min = 0.04
 scale_amount_max = 0.06
 
@@ -107,3 +109,17 @@ custom_minimum_size = Vector2(64, 96)
 layout_mode = 2
 texture = ExtResource("3_bv8p3")
 expand_mode = 1
+
+[node name="LabelOffset" type="Panel" parent="UICanvasLayer/HourglassPanel"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_cle82")
+
+[node name="StageTimeLabel" type="Label" parent="UICanvasLayer/HourglassPanel/LabelOffset"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 4.959709
+offset_top = 94.88626
+offset_right = 59.95971
+offset_bottom = 117.88626
+text = "1:00:00"
+horizontal_alignment = 1
