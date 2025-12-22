@@ -1,7 +1,107 @@
-[gd_scene load_steps=2 format=3 uid="uid://bpmy675hvaha5"]
+[gd_scene load_steps=13 format=3 uid="uid://bpmy675hvaha5"]
 
 [ext_resource type="PackedScene" uid="uid://r38vyovd3owh" path="res://Main Scenes/island_zone.tscn" id="1_ly0q4"]
+[ext_resource type="Script" uid="uid://wmuys7t36ugm" path="res://Main Scenes/hourglass_panel.gd" id="2_4q0ay"]
+[ext_resource type="Texture2D" uid="uid://cbnx0cybgjyp7" path="res://Assets/Textures/ui_hourglass_mask_bottom.png" id="2_bv8p3"]
+[ext_resource type="Texture2D" uid="uid://yd50jn5n4p8g" path="res://Assets/Textures/ui_hourglass_sand.png" id="3_4q0ay"]
+[ext_resource type="Texture2D" uid="uid://cymudm2f2uq8x" path="res://Assets/Textures/ui_hourglass_overlay.png" id="3_bv8p3"]
+[ext_resource type="Texture2D" uid="uid://bbhn6hqahrib0" path="res://Assets/Textures/ui_hourglass_falling_sand_mask.png" id="3_uixb0"]
+[ext_resource type="Texture2D" uid="uid://bti664aavr6jl" path="res://Assets/Textures/ui_hourglass_mask_top.png" id="5_it1kl"]
+[ext_resource type="Texture2D" uid="uid://dpolwdcqkiu7j" path="res://Assets/Textures/ui_hourglass_sand_top.png" id="6_uixb0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ly0q4"]
+content_margin_left = 4.0
+content_margin_top = 12.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uixb0"]
+
+[sub_resource type="Gradient" id="Gradient_it1kl"]
+offsets = PackedFloat32Array(0.106617644, 0.6727941, 0.8161765)
+colors = PackedColorArray(0.42900002, 0.44, 0.308, 1, 0.8660667, 0.88, 0.7128, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_uixb0"]
+gradient = SubResource("Gradient_it1kl")
+width = 6
+height = 6
+fill = 1
+fill_from = Vector2(0.5, 0.5)
 
 [node name="GameStage" type="Node"]
 
 [node name="IslandZone" parent="." instance=ExtResource("1_ly0q4")]
+
+[node name="UICanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HourglassPanel" type="PanelContainer" parent="UICanvasLayer"]
+unique_name_in_owner = true
+offset_right = 64.0
+offset_bottom = 64.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ly0q4")
+script = ExtResource("2_4q0ay")
+
+[node name="SandfallAnchorPanel" type="Panel" parent="UICanvasLayer/HourglassPanel"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_uixb0")
+
+[node name="FallingSandMask" type="Sprite2D" parent="UICanvasLayer/HourglassPanel/SandfallAnchorPanel"]
+unique_name_in_owner = true
+clip_children = 1
+position = Vector2(31.5, 66.384)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_uixb0")
+
+[node name="SandFalling" type="CPUParticles2D" parent="UICanvasLayer/HourglassPanel/SandfallAnchorPanel/FallingSandMask"]
+unique_name_in_owner = true
+position = Vector2(1.107544, -81.53775)
+scale = Vector2(4, 4)
+amount = 128
+texture = SubResource("GradientTexture2D_uixb0")
+emission_shape = 1
+emission_sphere_radius = 5.0
+gravity = Vector2(0, 280)
+scale_amount_min = 0.04
+scale_amount_max = 0.06
+
+[node name="FillEffectMaskBottom" type="TextureRect" parent="UICanvasLayer/HourglassPanel"]
+unique_name_in_owner = true
+clip_children = 1
+custom_minimum_size = Vector2(64, 96)
+layout_mode = 2
+texture = ExtResource("2_bv8p3")
+expand_mode = 1
+
+[node name="FillEffectSand" type="TextureRect" parent="UICanvasLayer/HourglassPanel/FillEffectMaskBottom"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 96)
+layout_mode = 0
+offset_top = 87.0
+offset_right = 64.0
+offset_bottom = 183.0
+texture = ExtResource("3_4q0ay")
+expand_mode = 1
+
+[node name="FillEffectMaskTop" type="TextureRect" parent="UICanvasLayer/HourglassPanel"]
+unique_name_in_owner = true
+clip_children = 1
+custom_minimum_size = Vector2(64, 96)
+layout_mode = 2
+texture = ExtResource("5_it1kl")
+expand_mode = 1
+
+[node name="TopEffectSand" type="TextureRect" parent="UICanvasLayer/HourglassPanel/FillEffectMaskTop"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 96)
+layout_mode = 0
+offset_top = 33.0
+offset_right = 64.0
+offset_bottom = 129.0
+texture = ExtResource("6_uixb0")
+expand_mode = 1
+
+[node name="HourglassOverlay" type="TextureRect" parent="UICanvasLayer/HourglassPanel"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 96)
+layout_mode = 2
+texture = ExtResource("3_bv8p3")
+expand_mode = 1
