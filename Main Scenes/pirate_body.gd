@@ -55,7 +55,7 @@ func _on_dig_failure():
 
 
 func _on_dig_timer_timeout():
-	Globals.dig_check(Globals.checking_quadrant)
+	Globals.dig_check()
 
 
 func _ready():

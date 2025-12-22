@@ -359,6 +359,9 @@ material = SubResource("FogMaterial_tksct")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0069731474, 6.096527, 0.038085938)
 shape = SubResource("BoxShape3D_gogrm")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/PirateBody"]
+unique_name_in_owner = true
+
 [node name="CameraOrigin" type="Node3D" parent="Player"]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3775526, 0)

@@ -2,6 +2,7 @@ extends Node
 
 const STAGE_TIME: float = 60.0 # seconds
 const DIG_TIME: float = 2.0 # seconds
+const DIG_RADIUS_SAFE_ZONE_BUFFER: int = 100
 
 
 var time: float = STAGE_TIME
@@ -23,19 +24,22 @@ var pirate: CharacterBody3D
 
 ## Returns true if dig attempt is within bounds.
 func dig_here(xz_position: Vector2) -> bool:
-	if xz_position.length_squared() > float(pow(GameStage.QUAD_SIZE * (GameStage.SEARCH_DIAMETER / 2), 2.0)):
+	if xz_position.length_squared() > float(pow(GameStage.QUAD_SIZE * (GameStage.SEARCH_RADIUS + DIG_RADIUS_SAFE_ZONE_BUFFER), 2.0)):
 		return false
 
 	checking_quadrant = Vector2i(xz_position / GameStage.QUAD_SIZE)
-
+	dig_check() # test bypass (TODO remove after testing)
 	return true
 
 
-func dig_check(checking_quadrant: Vector2i):
+func dig_check():
 	if checking_quadrant == treasure_quadrant:
+		print("treasure found!")
 		found_treasure.emit()
 	else:
+		print("treasure not found...")
 		treasure_not_found.emit()
+		prints("distance:", str(treasure_quadrant.distance_to(checking_quadrant)))
 
 
 func _process(delta):
