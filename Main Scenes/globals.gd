@@ -14,6 +14,7 @@ var time_state: TimeState = TimeState.READY
 signal starting
 signal timeout
 signal paused
+signal digging
 signal found_treasure
 signal treasure_not_found
 
@@ -31,12 +32,15 @@ var pirate: CharacterBody3D
 
 
 ## Returns true if dig attempt is within bounds.
-func dig_here(xz_position: Vector2) -> bool:
+func dig_here(xyz_position: Vector3) -> bool:
+	var xz_position: Vector2 = Vector2(xyz_position.x, xyz_position.z)
 	if xz_position.length_squared() > float(pow(GameStage.QUAD_SIZE * (GameStage.SEARCH_RADIUS + DIG_RADIUS_SAFE_ZONE_BUFFER), 2.0)):
 		return false
 
+	digging.emit(xyz_position)
+	dig_sound.emit()
 	checking_quadrant = Vector2i(xz_position / GameStage.QUAD_SIZE)
-	dig_check() # test bypass (TODO remove after testing)
+	#dig_check() # test bypass (TODO remove after testing)
 	return true
 
 

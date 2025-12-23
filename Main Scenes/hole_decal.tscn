@@ -1,0 +1,81 @@
+[gd_scene load_steps=9 format=3 uid="uid://cavu31quu5n0w"]
+
+[ext_resource type="Texture2D" uid="uid://d0tqwvlex1v78" path="res://Assets/Textures/hole_decal_texture.png" id="1_2f1os"]
+[ext_resource type="Script" uid="uid://cxbmvp6w5x01l" path="res://Main Scenes/dirt_dig_timer.gd" id="2_u4l7f"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_u4l7f"]
+noise_type = 2
+seed = 1
+frequency = 0.012
+fractal_octaves = 6
+fractal_gain = 0.65
+fractal_weighted_strength = 0.04
+cellular_jitter = 1.5
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_6y8ox"]
+width = 1024
+height = 1024
+noise = SubResource("FastNoiseLite_u4l7f")
+as_normal_map = true
+bump_strength = 32.0
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_2f1os"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_u4l7f"]
+width = 16
+height = 16
+noise = SubResource("FastNoiseLite_2f1os")
+as_normal_map = true
+bump_strength = 78.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6y8ox"]
+albedo_color = Color(0.36664605, 0.31392345, 0.15607864, 1)
+normal_enabled = true
+normal_texture = SubResource("NoiseTexture2D_u4l7f")
+
+[sub_resource type="SphereMesh" id="SphereMesh_2f1os"]
+material = SubResource("StandardMaterial3D_6y8ox")
+
+[node name="Decal" type="Decal"]
+size = Vector3(5, 5, 5)
+texture_albedo = ExtResource("1_2f1os")
+texture_normal = SubResource("NoiseTexture2D_6y8ox")
+texture_orm = ExtResource("1_2f1os")
+albedo_mix = 0.0
+distance_fade_enabled = true
+distance_fade_begin = 100.0
+distance_fade_length = 20.0
+cull_mask = 1
+
+[node name="DirtParticles" type="CPUParticles3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(-0.70710677, -0.70710677, 0, 0.70710677, -0.70710677, 0, 0, 0, 1, 0, 0, 0)
+layers = 2
+emitting = false
+amount = 256
+lifetime = 0.25
+one_shot = true
+explosiveness = 0.56
+mesh = SubResource("SphereMesh_2f1os")
+emission_shape = 1
+emission_sphere_radius = 4.0
+emission_colors = PackedColorArray(0.23242047, 0.1584158, 0, 1)
+direction = Vector3(1, -1, 0)
+gravity = Vector3(0, -120, 0)
+initial_velocity_min = 8.0
+initial_velocity_max = 12.0
+scale_amount_min = 0.02
+scale_amount_max = 0.03
+color = Color(0.17, 0.14631332, 0.0952, 1)
+
+[node name="EmitPulse" type="Timer" parent="."]
+wait_time = 0.4
+autostart = true
+script = ExtResource("2_u4l7f")
+
+[node name="EmitDuration" type="Timer" parent="EmitPulse"]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="EmitPulse" to="EmitPulse" method="_on_dirt_emit"]
+[connection signal="timeout" from="EmitPulse/EmitDuration" to="EmitPulse" method="_on_emit_off"]

@@ -1,4 +1,8 @@
-extends CharacterBody3D
+class_name PirateBody extends CharacterBody3D
+
+const DIG_OFFSET_FORWARD: float = 2.0
+const DIG_OFFSET_DOWN: float = 2.5
+
 
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -27,7 +31,9 @@ var animation_state: AnimationState = AnimationState.IDLE:
 			AnimationState.MOVE:
 				print("play 'move'")
 			AnimationState.DIG:
-				if Globals.dig_here(Vector2(global_position.x, global_position.z)):
+				var forward: Vector3 = -global_transform.basis.z.normalized()
+				var placement: Vector3 = global_position + forward * DIG_OFFSET_FORWARD
+				if Globals.dig_here(Vector3(placement.x, DIG_OFFSET_DOWN, placement.z)):
 					print("play 'dig'")
 					%DigTimer.start(Globals.DIG_TIME)
 				else:
