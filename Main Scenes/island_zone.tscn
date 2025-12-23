@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=4 uid="uid://r38vyovd3owh"]
+[gd_scene load_steps=46 format=4 uid="uid://r38vyovd3owh"]
 
 [ext_resource type="Shader" uid="uid://cetaxp2cwx7ix" path="res://Main Scenes/island_zone.gdshader" id="1_17qqg"]
 [ext_resource type="Texture2D" uid="uid://bqetv6rl658pr" path="res://Assets/Textures/sandy_repeating0.png" id="2_p860y"]
@@ -11,13 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://bprq0t25w5hch" path="res://Assets/Textures/Chest_lambert10SG_AORoughMetal.png" id="7_hmi32"]
 [ext_resource type="Texture2D" uid="uid://da4spmfqx72ea" path="res://Assets/Textures/Chest_lambert10SG_Normal.png" id="8_pmo1p"]
 [ext_resource type="Shader" uid="uid://ousi208pai8u" path="res://Assets/treasure_effect.gdshader" id="9_hmi32"]
-<<<<<<< Updated upstream
-[ext_resource type="PackedScene" uid="uid://bdp0vx2q454pt" path="res://Assets/Models/palm_1_01.tscn" id="12_pmo1p"]
-[ext_resource type="PackedScene" uid="uid://brqcc03axabhh" path="res://Main Scenes/decor_group.tscn" id="13_tksct"]
-=======
-[ext_resource type="PackedScene" uid="uid://bdp0vx2q454pt" path="res://Assets/Models/Palms1/palm_1_01.tscn" id="12_pmo1p"]
-[ext_resource type="PackedScene" uid="uid://b274mirpywkse" path="res://Assets/Models/Palms1/palm_1_02.tscn" id="13_tksct"]
->>>>>>> Stashed changes
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vp56l"]
 
@@ -425,19 +418,3 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -803
 shape = SubResource("ConcavePolygonShape3D_cr886")
 
 [node name="Decor" type="Node3D" parent="."]
-
-[node name="palm1_01" parent="Decor" instance=ExtResource("12_pmo1p")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.8108368, -12, -816)
-
-<<<<<<< Updated upstream
-[node name="DecorGroup" parent="Decor" instance=ExtResource("13_tksct")]
-transform = Transform3D(0.98003787, 0, -0.19881104, 0, 1, 0, 0.19881104, 0, 0.98003787, 0, 58.497906, 0)
-=======
-[node name="TreeGroup01" type="Node3D" parent="Decor"]
-
-[node name="palm1_01" parent="Decor/TreeGroup01" instance=ExtResource("12_pmo1p")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 80.35352, 0)
-
-[node name="palm1_02" parent="Decor/TreeGroup01" instance=ExtResource("13_tksct")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 69.85026, 0)
->>>>>>> Stashed changes

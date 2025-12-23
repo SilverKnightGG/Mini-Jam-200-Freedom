@@ -16,11 +16,16 @@ func scatter_decorations():
 	for child: Node3D in get_children():
 		var random_xz: Vector2 = Vector2.RIGHT * randf_range(MIN_RADIUS, scatter_radius)
 		random_xz = random_xz.rotated(randf_range(0.0, TAU))
+
 		child.set_position(Vector3(random_xz.x, 0.0, random_xz.y))
+
+	notify_property_list_changed()
 
 
 func self_random_rotation():
 	rotation.y = randf_range(0.0, TAU)
+
+	notify_property_list_changed()
 
 
 func snap_children_to_ground():
@@ -29,3 +34,5 @@ func snap_children_to_ground():
 			continue
 
 		Snap.snap_to_floor(child)
+
+	notify_property_list_changed()
