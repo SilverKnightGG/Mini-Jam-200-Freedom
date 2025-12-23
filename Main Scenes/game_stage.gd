@@ -19,8 +19,15 @@ func _generate_treasure():
 
 func _ready():
 	_generate_treasure()
+	_connect_globals_signals()
 	%HourglassPanel.draining_state = %HourglassPanel.DrainingState.DRAINING # ew direct reference of enum state like this is gross, but works here
 	Globals.starting.emit()
+
+
+func _connect_globals_signals():
+	if not Globals.dialogue_play.is_connected(_on_play_dialogue_sequence):
+		Globals.dialogue_play.connect(_on_play_dialogue_sequence)
+
 
 #region dialogue
 var dialogue_lines_to_play: Array[Dictionary] = []
@@ -28,6 +35,9 @@ var index_playing: int = 0
 
 
 func _on_play_dialogue_sequence(lines: Array[Dictionary]): # {Actor : String}
+	if not lines.size() > 0:
+		return
+
 	index_playing = 0
 	dialogue_lines_to_play.assign(lines)
 	play_dialogue_line()

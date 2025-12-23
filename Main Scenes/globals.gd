@@ -20,7 +20,7 @@ signal treasure_not_found
 # Sound signals
 signal dig_sound
 signal walk_sound
-signal dialogue_play(key: Variant)
+signal dialogue_play(lines: Array[Dictionary])
 
 var pause_emitted: bool = false
 var elapsed_time: float = 0.0
@@ -44,10 +44,16 @@ func dig_check():
 	if checking_quadrant == treasure_quadrant:
 		print("treasure found!")
 		found_treasure.emit()
+		dialogue_play.emit(Dialogue.select_dialogue(DialogueType.SUCCESS))
 	else:
 		print("treasure not found...")
 		treasure_not_found.emit()
-		prints("distance:", str(treasure_quadrant.distance_to(checking_quadrant)))
+		dialogue_play.emit(Dialogue.select_dialogue(DialogueType.FAILURE))
+		#prints("distance:", str(treasure_quadrant.distance_to(checking_quadrant)))
+
+
+
+enum DialogueType {SQUABBLE, SPONTANEOUS, FAILURE, SUCCESS, GAME_OVER, START}
 
 
 func _process(delta):
