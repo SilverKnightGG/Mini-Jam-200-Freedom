@@ -18,3 +18,5 @@ func _generate_treasure():
 
 func _ready():
 	_generate_treasure()
+	%HourglassPanel.draining_state = %HourglassPanel.DrainingState.DRAINING # ew direct reference of enum state like this is gross, but works here
+	Globals.starting.emit()

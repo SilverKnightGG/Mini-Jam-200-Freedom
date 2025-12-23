@@ -10,10 +10,18 @@ var time: float = STAGE_TIME
 enum TimeState {TICKING, READY, PAUSED, FINISHED}
 var time_state: TimeState = TimeState.READY
 
+# State signals
+signal starting
 signal timeout
 signal paused
 signal found_treasure
 signal treasure_not_found
+
+# Sound signals
+signal dig_sound
+signal walk_sound
+signal dialogue_play(key: Variant)
+
 var pause_emitted: bool = false
 var elapsed_time: float = 0.0
 var treasure_quadrant: Vector2i = Vector2i.ZERO
@@ -60,3 +68,8 @@ func _process(delta):
 				paused.emit()
 		TimeState.FINISHED:
 			pass
+
+
+# Added for testing only TODO remove once testing is completed
+func _ready():
+	time_state = TimeState.TICKING

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bpmy675hvaha5"]
+[gd_scene load_steps=17 format=3 uid="uid://bpmy675hvaha5"]
 
 [ext_resource type="Script" uid="uid://dnrptxe5iatpb" path="res://Main Scenes/game_stage.gd" id="1_cle82"]
 [ext_resource type="PackedScene" uid="uid://r38vyovd3owh" path="res://Main Scenes/island_zone.tscn" id="1_ly0q4"]
@@ -6,7 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://cbnx0cybgjyp7" path="res://Assets/Textures/ui_hourglass_mask_bottom.png" id="2_bv8p3"]
 [ext_resource type="Texture2D" uid="uid://yd50jn5n4p8g" path="res://Assets/Textures/ui_hourglass_sand.png" id="3_4q0ay"]
 [ext_resource type="Texture2D" uid="uid://cymudm2f2uq8x" path="res://Assets/Textures/ui_hourglass_overlay.png" id="3_bv8p3"]
+[ext_resource type="Script" uid="uid://c7h8gotm5io1c" path="res://Main Scenes/ambient_player.gd" id="3_t6kit"]
 [ext_resource type="Texture2D" uid="uid://bbhn6hqahrib0" path="res://Assets/Textures/ui_hourglass_falling_sand_mask.png" id="3_uixb0"]
+[ext_resource type="Script" uid="uid://b17fmp28e71xq" path="res://Main Scenes/effects_player.gd" id="4_2tj4v"]
 [ext_resource type="Texture2D" uid="uid://bti664aavr6jl" path="res://Assets/Textures/ui_hourglass_mask_top.png" id="5_it1kl"]
 [ext_resource type="Texture2D" uid="uid://dpolwdcqkiu7j" path="res://Assets/Textures/ui_hourglass_sand_top.png" id="6_uixb0"]
 
@@ -33,6 +35,14 @@ fill_from = Vector2(0.5, 0.5)
 script = ExtResource("1_cle82")
 
 [node name="IslandZone" parent="." instance=ExtResource("1_ly0q4")]
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+script = ExtResource("3_t6kit")
+
+[node name="EffectsPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+script = ExtResource("4_2tj4v")
 
 [node name="UICanvasLayer" type="CanvasLayer" parent="."]
 
@@ -97,9 +107,9 @@ expand_mode = 1
 unique_name_in_owner = true
 custom_minimum_size = Vector2(64, 96)
 layout_mode = 0
-offset_top = 33.0
+offset_top = -8.0
 offset_right = 64.0
-offset_bottom = 129.0
+offset_bottom = 88.0
 texture = ExtResource("6_uixb0")
 expand_mode = 1
 
