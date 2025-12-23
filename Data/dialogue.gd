@@ -20,8 +20,7 @@ static var LINES = {
 		INSULT1 = "*squak* You really are the worst pirate!",
 		INSULT2 = "*squak* Give me a cracker! It's all you're good for.",
 		INSULT3 = "*swquak* You'll still be just as ugly after you lift the curse!",
-		LOCATION_REPLY_0 = "",
-		LOCATION_REPLY_1 = "*squawk* Wrong spot, dummy! %s paces away!" %[DISTANCE_DELIMITER],
-
+		LOCATION_REPLY_0 = "You'll have to do better than that, its still %s paces away!" %[DISTANCE_DELIMITER],
+		LOCATION_REPLY_1 = "*squawk* Wrong spot, dummy! %s paces away!" %[DISTANCE_DELIMITER]
 	}
 }
