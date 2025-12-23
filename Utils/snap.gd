@@ -21,14 +21,21 @@ static func snap_to_floor(node: Node3D):
 		node.global_position.y = result.position.y - bottom_offset
 
 
+static func set_decal_y(decal: Decal, height_offset: float):
+	var aabb := get_visual_aabb(decal)
+	var height: float = decal.size.y
+
+	decal.global_position.y -= height / height_offset
+
+
 static func get_visual_aabb(root: Node3D) -> AABB:
 	var combined := AABB()
 	var first := true
 
 	for child in root.get_children():
-		if not child is MeshInstance3D:
+		if not child is VisualInstance3D:
 			return AABB(Vector3.ZERO, Vector3.ZERO)
-		var child_mesh: MeshInstance3D = child as MeshInstance3D
+		var child_mesh: VisualInstance3D = child as VisualInstance3D
 		var aabb: AABB = child_mesh.get_aabb()
 		aabb = aabb * child_mesh.transform
 
