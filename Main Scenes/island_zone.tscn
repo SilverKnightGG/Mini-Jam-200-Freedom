@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://r38vyovd3owh"]
+[gd_scene load_steps=47 format=4 uid="uid://r38vyovd3owh"]
 
 [ext_resource type="Shader" uid="uid://cetaxp2cwx7ix" path="res://Main Scenes/island_zone.gdshader" id="1_17qqg"]
 [ext_resource type="Texture2D" uid="uid://bqetv6rl658pr" path="res://Assets/Textures/sandy_repeating0.png" id="2_p860y"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bprq0t25w5hch" path="res://Assets/Textures/Chest_lambert10SG_AORoughMetal.png" id="7_hmi32"]
 [ext_resource type="Texture2D" uid="uid://da4spmfqx72ea" path="res://Assets/Textures/Chest_lambert10SG_Normal.png" id="8_pmo1p"]
 [ext_resource type="Shader" uid="uid://ousi208pai8u" path="res://Assets/treasure_effect.gdshader" id="9_hmi32"]
+[ext_resource type="PackedScene" uid="uid://bdp0vx2q454pt" path="res://Assets/Models/palm_1_01.tscn" id="12_pmo1p"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vp56l"]
 
@@ -331,7 +332,7 @@ transform = Transform3D(-1, 0, -1.2246469e-16, 0, 1, 0, 1.2246469e-16, 0, -1, 0,
 
 [node name="ChestLid" type="Node3D" parent="Player/PirateBody/Chest/Node"]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5881868e-22, 12.047577, 12.010498)
+transform = Transform3D(1, 0, 0, 0, 0.46637115, -0.88458914, 0, 0.88458914, 0.46637115, 1.5881868e-22, 12.047577, 12.010498)
 
 [node name="Mesh" type="MeshInstance3D" parent="Player/PirateBody/Chest/Node/ChestLid"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0587912e-22, -12.061043, -11.950684)
@@ -415,3 +416,8 @@ shape = SubResource("ConcavePolygonShape3D_0tobf")
 [node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2"]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -803.77954, -54.69009, 0)
 shape = SubResource("ConcavePolygonShape3D_cr886")
+
+[node name="Decor" type="Node3D" parent="."]
+
+[node name="palm1_01" parent="Decor" instance=ExtResource("12_pmo1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 41.224255, 0)
