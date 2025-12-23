@@ -23,12 +23,14 @@ func _enter_main_menu():
 func _enter_pause_menu():
 	paused_state = Game.PAUSE_MENU
 	get_tree().paused = true
+	Globals.time_state = Globals.TimeState.PAUSED
 
 
 func _enter_playing():
 	if not game_state == Game.PLAYING:
 		game_state = Game.PLAYING
 	paused_state = Game.PLAYING
+	Globals.time_state = Globals.TimeState.TICKING
 
 
 func _enter_game_over():
