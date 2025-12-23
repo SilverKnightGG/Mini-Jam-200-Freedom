@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://brqcc03axabhh"]
+
+[ext_resource type="Script" uid="uid://bvgsgm3eah7o6" path="res://tree_group.gd" id="1_7hj7p"]
+[ext_resource type="PackedScene" uid="uid://bdp0vx2q454pt" path="res://Assets/Models/palm_1_01.tscn" id="2_nfit0"]
+
+[node name="DecorGroup" type="Node3D"]
+transform = Transform3D(0.98003787, 0, -0.19881104, 0, 1, 0, 0.19881104, 0, 0.98003787, 0, 0, 0)
+script = ExtResource("1_7hj7p")
+scatter_radius = 28.0
+
+[node name="palm1_01" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.826027, 0, -21.921144)
+
+[node name="palm1_02" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.226375, 0, -16.218014)
+
+[node name="palm1_03" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.155787, 0, 7.80677)
+
+[node name="palm1_04" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -10.145249, 0, -14.081463)
+
+[node name="palm1_05" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -10.106758, 0, -1.8338364)
+
+[node name="palm1_06" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -3.6990247, 0, -10.437009)
+
+[node name="palm1_07" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.5615473, 0, -21.111732)
+
+[node name="palm1_08" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.25377, 0, -5.6537933)
+
+[node name="palm1_09" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 17.428047, 0, -9.89849)
+
+[node name="palm1_10" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.600461, 0, 4.3739586)
+
+[node name="palm1_11" parent="." instance=ExtResource("2_nfit0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.725431, 0, 9.1035)

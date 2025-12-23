@@ -15,6 +15,7 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ly0q4"]
 content_margin_left = 18.0
 content_margin_top = 24.0
+content_margin_bottom = 18.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uixb0"]
 
@@ -62,8 +63,12 @@ script = ExtResource("4_2tj4v")
 
 [node name="HourglassPanel" type="PanelContainer" parent="UICanvasLayer"]
 unique_name_in_owner = true
-offset_right = 64.0
-offset_bottom = 64.0
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -120.0
+offset_right = 82.0
+grow_vertical = 0
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_ly0q4")
 script = ExtResource("2_4q0ay")
@@ -141,10 +146,10 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_cle82")
 [node name="StageTimeLabel" type="Label" parent="UICanvasLayer/HourglassPanel/LabelOffset"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 4.959709
-offset_top = 94.88626
-offset_right = 59.95971
-offset_bottom = 117.88626
+offset_left = 4.3090553
+offset_top = -24.0
+offset_right = 59.309055
+offset_bottom = -1.0
 text = "1:00:00"
 horizontal_alignment = 1
 
@@ -176,7 +181,6 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(368, 84)
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Argh, ya scurvy rat!  Ya done made me upset, now!"
 label_settings = SubResource("LabelSettings_t6kit")
 vertical_alignment = 1
 autowrap_mode = 3

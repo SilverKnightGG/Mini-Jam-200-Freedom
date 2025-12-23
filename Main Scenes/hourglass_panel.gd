@@ -17,8 +17,6 @@ func _process(_delta):
 	if not draining_state == DrainingState.DRAINING:
 		return
 
-	prints("draining sand", str(Globals.time / Globals.STAGE_TIME))
-
 	%TopEffectSand.position.y = lerpf(TOP_SAND_TIME_START_LEVEL, TOP_SAND_TIME_OUT_LEVEL,  1.0 - Globals.time / Globals.STAGE_TIME)
 	%FillEffectSand.position.y = lerpf(FILL_SAND_TIME_START_LEVEL, FILL_SAND_TIME_OUT_LEVEL, 1.0 - Globals.time / Globals.STAGE_TIME)
 
