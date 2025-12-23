@@ -5,7 +5,7 @@ const DISTANCE_DELIMITER: String = "^"
 
 enum Character {PIRATE, PARROT}
 
-const LINES = {
+static var LINES = {
 	Character.PIRATE: {
 		GROAN = "*groans* Where be that blasted treasure?!",
 		CHEER1 = "Yar-har! I founds it!",
@@ -21,7 +21,7 @@ const LINES = {
 		INSULT2 = "*squak* Give me a cracker! It's all you're good for.",
 		INSULT3 = "*swquak* You'll still be just as ugly after you lift the curse!",
 		LOCATION_REPLY_0 = "",
-		LOCATION_REPLY_1 = "*squak* Wrong spot, dummy! %Paces away!",
+		LOCATION_REPLY_1 = "*squawk* Wrong spot, dummy! %s paces away!" %[DISTANCE_DELIMITER],
 
 	}
 }
