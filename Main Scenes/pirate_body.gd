@@ -4,7 +4,6 @@ const DIG_OFFSET_FORWARD: float = 2.0
 const DIG_OFFSET_DOWN: float = 2.5
 
 
-
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 @onready var parent: Node3D = get_parent()
@@ -28,9 +27,12 @@ var animation_state: AnimationState = AnimationState.IDLE:
 		match animation_state:
 			AnimationState.IDLE:
 				print("play 'idle'")
+				Globals.walk_sound.emit(false)
 			AnimationState.MOVE:
 				print("play 'move'")
+				Globals.walk_sound.emit(true)
 			AnimationState.DIG:
+				velocity = Vector3.ZERO
 				var forward: Vector3 = -global_transform.basis.z.normalized()
 				var placement: Vector3 = global_position + forward * DIG_OFFSET_FORWARD
 				if Globals.dig_here(Vector3(placement.x, DIG_OFFSET_DOWN, placement.z)):
@@ -58,10 +60,6 @@ func _on_dig_success():
 
 func _on_dig_failure():
 	animation_state = AnimationState.IDLE
-
-
-func _on_dig_timer_timeout():
-	Globals.dig_check()
 
 
 func _ready():
@@ -118,6 +116,8 @@ func _physics_process(delta):
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	if not is_on_floor(): # No digging when jumping!
+		return
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		if Input.is_action_just_pressed("DIG") and not animation_state == AnimationState.DIG:
 			animation_state = AnimationState.DIG

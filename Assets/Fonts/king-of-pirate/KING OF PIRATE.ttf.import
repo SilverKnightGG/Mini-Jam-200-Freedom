@@ -1,0 +1,36 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://de20g4a5kg8cf"
+path="res://.godot/imported/KING OF PIRATE.ttf-802975c972d50cf040b2d763986f03fa.fontdata"
+
+[deps]
+
+source_file="res://Assets/Fonts/king-of-pirate/KING OF PIRATE.ttf"
+dest_files=["res://.godot/imported/KING OF PIRATE.ttf-802975c972d50cf040b2d763986f03fa.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dl2tx5mdon2i4"
+path="res://.godot/imported/SFX - Running Loop Sand (kinda lol).ogg-1d4889749e4a234c490f1265300db69a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX/SFX - Running Loop Sand (kinda lol).ogg"
+dest_files=["res://.godot/imported/SFX - Running Loop Sand (kinda lol).ogg-1d4889749e4a234c490f1265300db69a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

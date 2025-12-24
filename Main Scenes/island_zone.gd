@@ -9,6 +9,7 @@ func _on_digging(location: Vector3):
 	new_hole.albedo_mix = 0.0
 	%Holes.add_child(new_hole)
 	new_hole.global_position = location
+	new_hole.global_position.y = 500.0
 	Snap.snap_to_floor(new_hole)
 	Snap.set_decal_y(new_hole, PirateBody.DIG_OFFSET_DOWN)
 	var hole_tween: Tween = get_tree().create_tween()

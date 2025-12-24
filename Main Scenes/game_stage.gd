@@ -21,7 +21,6 @@ func _ready():
 	_generate_treasure()
 	_connect_globals_signals()
 	%HourglassPanel.draining_state = %HourglassPanel.DrainingState.DRAINING # ew direct reference of enum state like this is gross, but works here
-	Globals.starting.emit()
 
 
 func _connect_globals_signals():
@@ -45,8 +44,8 @@ func _on_play_dialogue_sequence(lines: Array[Dictionary]): # {Actor : String}
 
 func play_dialogue_line():
 	%DialogueDisplay.show()
-	var actor: Actor = dialogue_lines_to_play[index_playing]["actor"]
-	var line: String = dialogue_lines_to_play[index_playing]["line"]
+	var actor: Actor = dialogue_lines_to_play[index_playing].keys()[index_playing]
+	var line: String = dialogue_lines_to_play[index_playing].values()[index_playing]
 
 	match actor:
 		Actor.PIRATE:
@@ -57,6 +56,10 @@ func play_dialogue_line():
 			%PiratePortrait.hide()
 			%ParrotPortrait.show()
 			%DialogueLabel.horizontal_alignment = SIDE_RIGHT
+
+	if line.contains(Dialogue.DISTANCE_DELIMITER):
+		%DistanceFromLastLabels.show()
+		line.replace(Dialogue.DISTANCE_DELIMITER, Globals.last_distance)
 
 	%DialogueLabel.text = line
 
