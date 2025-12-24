@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://lt0hxksmwc6v"
+path="res://.godot/imported/VO - pirate - threat 2 - pluck yer feathers.ogg-14125e1f69fa5a9e60fb436133e0755b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Voiceovers/VO - pirate - threat 2 - pluck yer feathers.ogg"
+dest_files=["res://.godot/imported/VO - pirate - threat 2 - pluck yer feathers.ogg-14125e1f69fa5a9e60fb436133e0755b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

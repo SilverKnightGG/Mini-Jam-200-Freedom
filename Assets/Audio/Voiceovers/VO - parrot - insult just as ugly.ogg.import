@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c3043cbmmjbpy"
+path="res://.godot/imported/VO - parrot - insult just as ugly.ogg-f30f5d5764e5517854486b79e2f04361.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Voiceovers/VO - parrot - insult just as ugly.ogg"
+dest_files=["res://.godot/imported/VO - parrot - insult just as ugly.ogg-f30f5d5764e5517854486b79e2f04361.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

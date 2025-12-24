@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://db6dyll11oggs"
+path="res://.godot/imported/VO - pirate - cheer 2 - curse be lifted.ogg-dd8b178b7080acef8e9690f5b3dda689.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Voiceovers/VO - pirate - cheer 2 - curse be lifted.ogg"
+dest_files=["res://.godot/imported/VO - pirate - cheer 2 - curse be lifted.ogg-dd8b178b7080acef8e9690f5b3dda689.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

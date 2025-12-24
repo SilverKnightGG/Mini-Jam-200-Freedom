@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://klesfhk6bwyn"
+path="res://.godot/imported/VO - pirate - cheer 1 - i founds it.ogg-bba71974e1e48fd098a582964bc3410a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Voiceovers/VO - pirate - cheer 1 - i founds it.ogg"
+dest_files=["res://.godot/imported/VO - pirate - cheer 1 - i founds it.ogg-bba71974e1e48fd098a582964bc3410a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

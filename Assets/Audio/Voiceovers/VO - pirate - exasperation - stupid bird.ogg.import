@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ba1113uqms3af"
+path="res://.godot/imported/VO - pirate - exasperation - stupid bird.ogg-fbd650dcd2b6c7f786ac97c1e5804bd0.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Voiceovers/VO - pirate - exasperation - stupid bird.ogg"
+dest_files=["res://.godot/imported/VO - pirate - exasperation - stupid bird.ogg-fbd650dcd2b6c7f786ac97c1e5804bd0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

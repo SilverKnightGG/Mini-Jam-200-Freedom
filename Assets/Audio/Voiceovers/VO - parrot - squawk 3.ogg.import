@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://710xc7k2sovk"
+path="res://.godot/imported/VO - parrot - squawk 3.ogg-45982fdbd8da082044d7c8dc7f2cbd23.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Voiceovers/VO - parrot - squawk 3.ogg"
+dest_files=["res://.godot/imported/VO - parrot - squawk 3.ogg-45982fdbd8da082044d7c8dc7f2cbd23.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

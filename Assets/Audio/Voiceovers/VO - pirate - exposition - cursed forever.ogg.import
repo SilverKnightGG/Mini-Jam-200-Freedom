@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctvb7qicapnwk"
+path="res://.godot/imported/VO - pirate - exposition - cursed forever.ogg-f54d32e69960104da1f72425dd98d8cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Voiceovers/VO - pirate - exposition - cursed forever.ogg"
+dest_files=["res://.godot/imported/VO - pirate - exposition - cursed forever.ogg-f54d32e69960104da1f72425dd98d8cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

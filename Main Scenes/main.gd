@@ -1,5 +1,7 @@
 extends Node
 
+const STAGE_SCENE: PackedScene = preload("uid://bpmy675hvaha5")
+
 
 #region game state
 
@@ -12,12 +14,16 @@ var can_continue_to_credits: bool = false
 #enter
 
 func _enter_splash():
+	%MusicPlayer.play()
+	%Splash.show()
 	can_continue_to_credits = false
 	game_state = Game.SPLASH
 
 
 func _enter_main_menu():
+	%Menu.show()
 	game_state = Game.MAIN_MENU
+
 
 
 func _enter_pause_menu():
@@ -29,12 +35,19 @@ func _enter_pause_menu():
 func _enter_playing():
 	if not game_state == Game.PLAYING:
 		game_state = Game.PLAYING
+
+	var new_stage: Node = STAGE_SCENE.instantiate()
+	add_child(new_stage)
+
+	if not %MusicPlayer.playing:
+		%MusicPlayer.play()
 	paused_state = Game.PLAYING
 	Globals.time_state = Globals.TimeState.TICKING
 
 
 func _enter_game_over():
 	game_state = Game.GAME_OVER
+	%MusicPlayer.stop()
 	await Globals.pirate.finished_kneeling
 	can_continue_to_credits = true
 	# TODO show the game_over scene and free the game_stage
@@ -48,16 +61,17 @@ func _enter_success():
 
 
 func _enter_credits():
+	%MusicPlayer.play()
 	game_state = Game.CREDITS
 
 #exit
 
 func _exit_splash():
-	pass
+	%Splash.hide()
 
 
 func _exit_main_menu():
-	pass
+	%Menu.hide()
 
 
 func _exit_pause_menu():

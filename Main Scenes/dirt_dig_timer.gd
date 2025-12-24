@@ -14,3 +14,7 @@ func _on_dirt_emit():
 
 func _on_emit_off():
 	can_emit = false
+
+
+func _on_lifetime_timeout() -> void:
+	get_parent().queue_free()
