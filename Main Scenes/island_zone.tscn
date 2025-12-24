@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://r38vyovd3owh"]
+[gd_scene load_steps=44 format=4 uid="uid://r38vyovd3owh"]
 
 [ext_resource type="Shader" uid="uid://cetaxp2cwx7ix" path="res://Main Scenes/island_zone.gdshader" id="1_17qqg"]
 [ext_resource type="Script" uid="uid://cn36vkgf5aqka" path="res://Main Scenes/island_zone.gd" id="1_pmo1p"]
@@ -8,6 +8,22 @@
 [ext_resource type="Script" uid="uid://cqw7kcg48c4fb" path="res://Main Scenes/pirate_body.gd" id="5_ex3y6"]
 [ext_resource type="Script" uid="uid://bfgspm4aoyi82" path="res://Main Scenes/camera_origin.gd" id="6_y0c4u"]
 [ext_resource type="Shader" uid="uid://bs2euc6f0fwq" path="res://Main Scenes/water_ocean.gdshader" id="7_0tobf"]
+[ext_resource type="PackedScene" uid="uid://brqcc03axabhh" path="res://Main Scenes/decor_group.tscn" id="9_g3gaj"]
+[ext_resource type="PackedScene" uid="uid://bdp0vx2q454pt" path="res://Assets/Models/Palms1/palm_1_01.tscn" id="10_alvx4"]
+[ext_resource type="PackedScene" uid="uid://b274mirpywkse" path="res://Assets/Models/Palms1/palm_1_02.tscn" id="11_upsw8"]
+[ext_resource type="PackedScene" uid="uid://cbgoqvufdxwth" path="res://Assets/Models/Palms1/palm_1_03.tscn" id="12_ohdhr"]
+[ext_resource type="PackedScene" uid="uid://537bg7tw0oii" path="res://Assets/Models/Palms1/palm_1_04.tscn" id="13_2rcr2"]
+[ext_resource type="PackedScene" uid="uid://big2j16henvdg" path="res://Assets/Models/Palms1/palm_1_05.tscn" id="14_ad3l7"]
+[ext_resource type="PackedScene" uid="uid://81i6q3h155vr" path="res://Assets/Models/Palms1/palm_1_06.tscn" id="15_6vwf1"]
+[ext_resource type="PackedScene" uid="uid://c7rlox6mj3ros" path="res://Assets/Models/Palms1/palm_1_07.tscn" id="16_30m8a"]
+[ext_resource type="PackedScene" uid="uid://cqwl34e4km6wb" path="res://Assets/Models/Palms1/palm_1_08.tscn" id="17_0wjs6"]
+[ext_resource type="PackedScene" uid="uid://c6xqrigmc1868" path="res://Assets/Models/Palms1/palm_1_09.tscn" id="18_t0vre"]
+[ext_resource type="PackedScene" uid="uid://6ejkj0rafweh" path="res://Assets/Models/Palms1/palm_1_10.tscn" id="19_48w17"]
+[ext_resource type="PackedScene" uid="uid://blscjaiydk84n" path="res://Assets/Models/Plants1/plant_01.tscn" id="20_ad3l7"]
+[ext_resource type="PackedScene" uid="uid://cis21dmnq8hrk" path="res://Assets/Models/Plants1/plant_02.tscn" id="21_6vwf1"]
+[ext_resource type="PackedScene" uid="uid://ca72kfrwd1fli" path="res://Assets/Models/Plants1/plant_03.tscn" id="22_30m8a"]
+[ext_resource type="PackedScene" uid="uid://xpo5tum28hqu" path="res://Assets/Models/Plants1/plant_04.tscn" id="23_0wjs6"]
+[ext_resource type="PackedScene" uid="uid://cpl2glrhum88l" path="res://Assets/Models/Plants1/plant_05.tscn" id="24_t0vre"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vp56l"]
 
@@ -248,6 +264,1714 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -803
 shape = SubResource("ConcavePolygonShape3D_cr886")
 
 [node name="Decor" type="Node3D" parent="."]
+
+[node name="DecorGroup" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.98003787, 0, -0.19881104, 0, 1, 0, 0.19881104, 0, 0.98003787, 44.101303, 52.03728, 111.73436)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21.395393, -15.818508, 32.617554)
+
+[node name="palm1_02" parent="Decor/DecorGroup" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 1.94664, -15.134407, 30.18103)
+
+[node name="palm1_03" parent="Decor/DecorGroup" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13.376015, -12.275303, -41.881767)
+
+[node name="palm1_04" parent="Decor/DecorGroup" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20.580318, -13.749001, 14.853004)
+
+[node name="palm1_05" parent="Decor/DecorGroup" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.707245, -13.178417, -5.38179)
+
+[node name="palm1_06" parent="Decor/DecorGroup" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13.319344, -14.053795, 1.8565521)
+
+[node name="palm1_07" parent="Decor/DecorGroup" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.369553, -14.38398, 5.686432)
+
+[node name="palm1_08" parent="Decor/DecorGroup" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 6.780159, -14.3675, 12.479752)
+
+[node name="palm1_09" parent="Decor/DecorGroup" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.396309, -14.056927, 22.389252)
+
+[node name="palm1_10" parent="Decor/DecorGroup" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.107155, -12.729717, -14.653015)
+
+[node name="DecorGroup2" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.3328713, 0, -0.9429723, 0, 1, 0, 0.9429723, 0, -0.3328713, 109.139275, 500, 130.84106)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup2" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -35.793007, -464.27692, -25.734741)
+
+[node name="palm1_02" parent="Decor/DecorGroup2" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -41.48361, -463.20416, -8.271378)
+
+[node name="palm1_03" parent="Decor/DecorGroup2" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.966606, -463.54865, 7.692276)
+
+[node name="palm1_04" parent="Decor/DecorGroup2" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.341919, -461.97714, 43.332825)
+
+[node name="palm1_05" parent="Decor/DecorGroup2" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.59671, -464.35962, -10.853653)
+
+[node name="palm1_06" parent="Decor/DecorGroup2" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -37.916626, -462.49548, 7.7529907)
+
+[node name="palm1_07" parent="Decor/DecorGroup2" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 26.850098, -466.3824, -27.203201)
+
+[node name="palm1_08" parent="Decor/DecorGroup2" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 42.224533, -466.97058, -25.776764)
+
+[node name="palm1_09" parent="Decor/DecorGroup2" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.645096, -464.33887, 2.465683)
+
+[node name="palm1_10" parent="Decor/DecorGroup2" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.590904, -462.7591, 51.823875)
+
+[node name="DecorGroup3" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.60991585, 0, -0.7924662, 0, 1, 0, 0.7924662, 0, 0.60991585, 67.363594, 500, 210.9817)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup3" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.5194244, -467.70966, 6.2319794)
+
+[node name="palm1_02" parent="Decor/DecorGroup3" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.339706, -467.1972, 11.244141)
+
+[node name="palm1_03" parent="Decor/DecorGroup3" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -42.24768, -464.71362, -22.974415)
+
+[node name="palm1_04" parent="Decor/DecorGroup3" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 15.786774, -469.40872, 21.90564)
+
+[node name="palm1_05" parent="Decor/DecorGroup3" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21.741013, -468.8078, -12.133476)
+
+[node name="palm1_06" parent="Decor/DecorGroup3" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.800827, -469.2205, 29.507797)
+
+[node name="palm1_07" parent="Decor/DecorGroup3" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 35.784515, -470.09894, 4.3374634)
+
+[node name="palm1_08" parent="Decor/DecorGroup3" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.5494232, -466.90726, -37.020004)
+
+[node name="palm1_09" parent="Decor/DecorGroup3" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.598877, -468.10477, -34.898094)
+
+[node name="palm1_10" parent="Decor/DecorGroup3" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.9855804, -467.2577, -45.721756)
+
+[node name="DecorGroup4" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.89628863, 0, 0.44347116, 0, 1, 0, -0.44347116, 0, -0.89628863, 140.43616, 500, 190.2376)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup4" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.468674, -468.76746, 11.687233)
+
+[node name="palm1_02" parent="Decor/DecorGroup4" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.2223206, -468.17645, 4.009018)
+
+[node name="palm1_03" parent="Decor/DecorGroup4" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.9975433, -467.79987, 2.596161)
+
+[node name="palm1_04" parent="Decor/DecorGroup4" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36.40547, -465.87665, 12.88118)
+
+[node name="palm1_05" parent="Decor/DecorGroup4" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 31.997528, -466.39606, 4.8712387)
+
+[node name="palm1_06" parent="Decor/DecorGroup4" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.4447327, -468.96396, -13.717705)
+
+[node name="palm1_07" parent="Decor/DecorGroup4" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32.245224, -469.30862, 23.05275)
+
+[node name="palm1_08" parent="Decor/DecorGroup4" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.823883, -470.41513, -26.016449)
+
+[node name="palm1_09" parent="Decor/DecorGroup4" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.000137, -469.16388, -11.250687)
+
+[node name="palm1_10" parent="Decor/DecorGroup4" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 22.165176, -466.15558, 26.379684)
+
+[node name="DecorGroup5" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.7928682, 0, 0.6093932, 0, 1, 0, -0.6093932, 0, 0.7928682, 12.731476, 500, 174.80212)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup5" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 25.82695, -463.22974, -13.837173)
+
+[node name="palm1_02" parent="Decor/DecorGroup5" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -41.144096, -463.88174, -34.179306)
+
+[node name="palm1_03" parent="Decor/DecorGroup5" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -35.92501, -466.09982, 5.984558)
+
+[node name="palm1_04" parent="Decor/DecorGroup5" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -39.181984, -465.71152, -2.077774)
+
+[node name="palm1_05" parent="Decor/DecorGroup5" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28.387642, -465.97043, 34.561844)
+
+[node name="palm1_06" parent="Decor/DecorGroup5" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.265297, -466.7821, 43.570724)
+
+[node name="palm1_07" parent="Decor/DecorGroup5" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 19.673073, -463.60968, -9.695709)
+
+[node name="palm1_08" parent="Decor/DecorGroup5" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -21.554985, -463.50836, -30.797852)
+
+[node name="palm1_09" parent="Decor/DecorGroup5" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.6144485, -464.5814, 0.8677521)
+
+[node name="palm1_10" parent="Decor/DecorGroup5" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.3247223, -464.667, 1.7634888)
+
+[node name="DecorGroup6" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9863354, 0, -0.16474977, 0, 1, 0, 0.16474977, 0, -0.9863354, 95.98578, 500, 0.03692627)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup6" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20.339981, -456.8213, 41.23381)
+
+[node name="palm1_02" parent="Decor/DecorGroup6" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.246895, -459.51025, -17.20665)
+
+[node name="palm1_03" parent="Decor/DecorGroup6" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 6.0223465, -459.96872, -40.27709)
+
+[node name="palm1_04" parent="Decor/DecorGroup6" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.33049, -459.22076, -9.951236)
+
+[node name="palm1_05" parent="Decor/DecorGroup6" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.2525635, -456.95798, 45.730087)
+
+[node name="palm1_06" parent="Decor/DecorGroup6" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 23.734001, -457.69476, 11.660703)
+
+[node name="palm1_07" parent="Decor/DecorGroup6" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.263359, -460.15314, -46.69389)
+
+[node name="palm1_08" parent="Decor/DecorGroup6" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 10.533073, -458.40118, -0.057673454)
+
+[node name="palm1_09" parent="Decor/DecorGroup6" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.4660568, -458.74002, -4.600993)
+
+[node name="palm1_10" parent="Decor/DecorGroup6" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 15.265907, -457.5755, 20.793915)
+
+[node name="DecorGroup7" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9934384, 0, 0.114368126, 0, 1, 0, -0.114368126, 0, -0.9934384, 181.4346, 500, 35.387093)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup7" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -27.30046, -464.97775, 20.56562)
+
+[node name="palm1_02" parent="Decor/DecorGroup7" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -10.304245, -463.9333, 16.52647)
+
+[node name="palm1_03" parent="Decor/DecorGroup7" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -14.127243, -464.59018, -1.5982628)
+
+[node name="palm1_04" parent="Decor/DecorGroup7" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 22.240906, -462.1135, 10.9881115)
+
+[node name="palm1_05" parent="Decor/DecorGroup7" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -8.098938, -463.71918, 19.6241)
+
+[node name="palm1_06" parent="Decor/DecorGroup7" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 12.409119, -463.35736, -16.47504)
+
+[node name="palm1_07" parent="Decor/DecorGroup7" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 11.456619, -462.56686, 17.810255)
+
+[node name="palm1_08" parent="Decor/DecorGroup7" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 1.2951508, -464.8245, -47.5149)
+
+[node name="palm1_09" parent="Decor/DecorGroup7" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 8.879501, -462.27972, 36.049698)
+
+[node name="palm1_10" parent="Decor/DecorGroup7" instance=ExtResource("19_48w17")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 47.707123, -460.35483, 28.51921)
+
+[node name="DecorGroup8" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.52381057, 0, 0.8518347, 0, 1, 0, -0.8518347, 0, 0.52381057, 239.45416, 500, 104.69979)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup8" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 35.16297, -466.65985, -42.841583)
+
+[node name="palm1_02" parent="Decor/DecorGroup8" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.376831, -469.6879, 3.2824402)
+
+[node name="palm1_03" parent="Decor/DecorGroup8" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -30.85408, -471.45035, 30.437927)
+
+[node name="palm1_04" parent="Decor/DecorGroup8" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.3930283, -470.12836, 10.276489)
+
+[node name="palm1_05" parent="Decor/DecorGroup8" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.804, -473.4468, 48.019012)
+
+[node name="palm1_06" parent="Decor/DecorGroup8" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -37.405968, -467.65195, -24.555359)
+
+[node name="palm1_07" parent="Decor/DecorGroup8" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.414803, -468.6761, -12.749512)
+
+[node name="palm1_08" parent="Decor/DecorGroup8" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -22.227333, -470.90103, 22.459656)
+
+[node name="palm1_09" parent="Decor/DecorGroup8" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.356277, -471.23398, 23.57248)
+
+[node name="palm1_10" parent="Decor/DecorGroup8" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.5504837, -470.58762, 16.26651)
+
+[node name="DecorGroup9" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.98003787, 0, -0.19881104, 0, 1, 0, 0.19881104, 0, 0.98003787, 44.101303, 52.03728, 111.73436)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup9" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21.395393, -15.818508, 32.617554)
+
+[node name="palm1_02" parent="Decor/DecorGroup9" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 1.94664, -15.134407, 30.18103)
+
+[node name="palm1_03" parent="Decor/DecorGroup9" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13.376015, -12.275303, -41.881767)
+
+[node name="palm1_04" parent="Decor/DecorGroup9" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20.580318, -13.749001, 14.853004)
+
+[node name="palm1_05" parent="Decor/DecorGroup9" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.707245, -13.178417, -5.38179)
+
+[node name="palm1_06" parent="Decor/DecorGroup9" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13.319344, -14.053795, 1.8565521)
+
+[node name="palm1_07" parent="Decor/DecorGroup9" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.369553, -14.38398, 5.686432)
+
+[node name="palm1_08" parent="Decor/DecorGroup9" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 6.780159, -14.3675, 12.479752)
+
+[node name="palm1_09" parent="Decor/DecorGroup9" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.396309, -14.056927, 22.389252)
+
+[node name="palm1_10" parent="Decor/DecorGroup9" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.107155, -12.729717, -14.653015)
+
+[node name="DecorGroup10" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.3328713, 0, -0.9429723, 0, 1, 0, 0.9429723, 0, -0.3328713, 109.139275, 500, 130.84106)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup10" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -35.793007, -464.27692, -25.734741)
+
+[node name="palm1_02" parent="Decor/DecorGroup10" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -41.48361, -463.20416, -8.271378)
+
+[node name="palm1_03" parent="Decor/DecorGroup10" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.966606, -463.54865, 7.692276)
+
+[node name="palm1_04" parent="Decor/DecorGroup10" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.341919, -461.97714, 43.332825)
+
+[node name="palm1_05" parent="Decor/DecorGroup10" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.59671, -464.35962, -10.853653)
+
+[node name="palm1_06" parent="Decor/DecorGroup10" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -37.916626, -462.49548, 7.7529907)
+
+[node name="palm1_07" parent="Decor/DecorGroup10" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 26.850098, -466.3824, -27.203201)
+
+[node name="palm1_08" parent="Decor/DecorGroup10" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 42.224533, -466.97058, -25.776764)
+
+[node name="palm1_09" parent="Decor/DecorGroup10" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.645096, -464.33887, 2.465683)
+
+[node name="palm1_10" parent="Decor/DecorGroup10" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.590904, -462.7591, 51.823875)
+
+[node name="DecorGroup11" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.60991585, 0, -0.7924662, 0, 1, 0, 0.7924662, 0, 0.60991585, 67.363594, 500, 210.9817)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup11" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.5194244, -467.70966, 6.2319794)
+
+[node name="palm1_02" parent="Decor/DecorGroup11" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.339706, -467.1972, 11.244141)
+
+[node name="palm1_03" parent="Decor/DecorGroup11" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -42.24768, -464.71362, -22.974415)
+
+[node name="palm1_04" parent="Decor/DecorGroup11" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 15.786774, -469.40872, 21.90564)
+
+[node name="palm1_05" parent="Decor/DecorGroup11" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21.741013, -468.8078, -12.133476)
+
+[node name="palm1_06" parent="Decor/DecorGroup11" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.800827, -469.2205, 29.507797)
+
+[node name="palm1_07" parent="Decor/DecorGroup11" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 35.784515, -470.09894, 4.3374634)
+
+[node name="palm1_08" parent="Decor/DecorGroup11" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.5494232, -466.90726, -37.020004)
+
+[node name="palm1_09" parent="Decor/DecorGroup11" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.598877, -468.10477, -34.898094)
+
+[node name="palm1_10" parent="Decor/DecorGroup11" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.9855804, -467.2577, -45.721756)
+
+[node name="DecorGroup12" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.89628863, 0, 0.44347116, 0, 1, 0, -0.44347116, 0, -0.89628863, 140.43616, 500, 190.2376)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup12" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.468674, -468.76746, 11.687233)
+
+[node name="palm1_02" parent="Decor/DecorGroup12" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.2223206, -468.17645, 4.009018)
+
+[node name="palm1_03" parent="Decor/DecorGroup12" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.9975433, -467.79987, 2.596161)
+
+[node name="palm1_04" parent="Decor/DecorGroup12" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36.40547, -465.87665, 12.88118)
+
+[node name="palm1_05" parent="Decor/DecorGroup12" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 31.997528, -466.39606, 4.8712387)
+
+[node name="palm1_06" parent="Decor/DecorGroup12" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.4447327, -468.96396, -13.717705)
+
+[node name="palm1_07" parent="Decor/DecorGroup12" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32.245224, -469.30862, 23.05275)
+
+[node name="palm1_08" parent="Decor/DecorGroup12" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.823883, -470.41513, -26.016449)
+
+[node name="palm1_09" parent="Decor/DecorGroup12" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.000137, -469.16388, -11.250687)
+
+[node name="palm1_10" parent="Decor/DecorGroup12" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 22.165176, -466.15558, 26.379684)
+
+[node name="DecorGroup13" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.7928682, 0, 0.6093932, 0, 1, 0, -0.6093932, 0, 0.7928682, 12.731476, 500, 174.80212)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup13" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 25.82695, -463.22974, -13.837173)
+
+[node name="palm1_02" parent="Decor/DecorGroup13" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -41.144096, -463.88174, -34.179306)
+
+[node name="palm1_03" parent="Decor/DecorGroup13" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -35.92501, -466.09982, 5.984558)
+
+[node name="palm1_04" parent="Decor/DecorGroup13" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -39.181984, -465.71152, -2.077774)
+
+[node name="palm1_05" parent="Decor/DecorGroup13" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28.387642, -465.97043, 34.561844)
+
+[node name="palm1_06" parent="Decor/DecorGroup13" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.265297, -466.7821, 43.570724)
+
+[node name="palm1_07" parent="Decor/DecorGroup13" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 19.673073, -463.60968, -9.695709)
+
+[node name="palm1_08" parent="Decor/DecorGroup13" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -21.554985, -463.50836, -30.797852)
+
+[node name="palm1_09" parent="Decor/DecorGroup13" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.6144485, -464.5814, 0.8677521)
+
+[node name="palm1_10" parent="Decor/DecorGroup13" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.3247223, -464.667, 1.7634888)
+
+[node name="DecorGroup14" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9863354, 0, -0.16474977, 0, 1, 0, 0.16474977, 0, -0.9863354, 95.98578, 500, 0.03692627)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup14" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20.339981, -456.8213, 41.23381)
+
+[node name="palm1_02" parent="Decor/DecorGroup14" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.246895, -459.51025, -17.20665)
+
+[node name="palm1_03" parent="Decor/DecorGroup14" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 6.0223465, -459.96872, -40.27709)
+
+[node name="palm1_04" parent="Decor/DecorGroup14" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.33049, -459.22076, -9.951236)
+
+[node name="palm1_05" parent="Decor/DecorGroup14" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.2525635, -456.95798, 45.730087)
+
+[node name="palm1_06" parent="Decor/DecorGroup14" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 23.734001, -457.69476, 11.660703)
+
+[node name="palm1_07" parent="Decor/DecorGroup14" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.263359, -460.15314, -46.69389)
+
+[node name="palm1_08" parent="Decor/DecorGroup14" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 10.533073, -458.40118, -0.057673454)
+
+[node name="palm1_09" parent="Decor/DecorGroup14" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.4660568, -458.74002, -4.600993)
+
+[node name="palm1_10" parent="Decor/DecorGroup14" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 15.265907, -457.5755, 20.793915)
+
+[node name="DecorGroup15" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9934384, 0, 0.114368126, 0, 1, 0, -0.114368126, 0, -0.9934384, 181.4346, 500, 35.387093)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup15" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -27.30046, -464.97775, 20.56562)
+
+[node name="palm1_02" parent="Decor/DecorGroup15" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -10.304245, -463.9333, 16.52647)
+
+[node name="palm1_03" parent="Decor/DecorGroup15" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -14.127243, -464.59018, -1.5982628)
+
+[node name="palm1_04" parent="Decor/DecorGroup15" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 22.240906, -462.1135, 10.9881115)
+
+[node name="palm1_05" parent="Decor/DecorGroup15" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -8.098938, -463.71918, 19.6241)
+
+[node name="palm1_06" parent="Decor/DecorGroup15" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 12.409119, -463.35736, -16.47504)
+
+[node name="palm1_07" parent="Decor/DecorGroup15" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 11.456619, -462.56686, 17.810255)
+
+[node name="palm1_08" parent="Decor/DecorGroup15" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 1.2951508, -464.8245, -47.5149)
+
+[node name="palm1_09" parent="Decor/DecorGroup15" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 8.879501, -462.27972, 36.049698)
+
+[node name="palm1_10" parent="Decor/DecorGroup15" instance=ExtResource("19_48w17")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 47.707123, -460.35483, 28.51921)
+
+[node name="DecorGroup16" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.52381057, 0, 0.8518347, 0, 1, 0, -0.8518347, 0, 0.52381057, 239.45416, 500, 104.69979)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup16" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 35.16297, -466.65985, -42.841583)
+
+[node name="palm1_02" parent="Decor/DecorGroup16" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.376831, -469.6879, 3.2824402)
+
+[node name="palm1_03" parent="Decor/DecorGroup16" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -30.85408, -471.45035, 30.437927)
+
+[node name="palm1_04" parent="Decor/DecorGroup16" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.3930283, -470.12836, 10.276489)
+
+[node name="palm1_05" parent="Decor/DecorGroup16" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.804, -473.4468, 48.019012)
+
+[node name="palm1_06" parent="Decor/DecorGroup16" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -37.405968, -467.65195, -24.555359)
+
+[node name="palm1_07" parent="Decor/DecorGroup16" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.414803, -468.6761, -12.749512)
+
+[node name="palm1_08" parent="Decor/DecorGroup16" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -22.227333, -470.90103, 22.459656)
+
+[node name="palm1_09" parent="Decor/DecorGroup16" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.356277, -471.23398, 23.57248)
+
+[node name="palm1_10" parent="Decor/DecorGroup16" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.5504837, -470.58762, 16.26651)
+
+[node name="DecorGroup17" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.9338692, 0, 0.35761485, 0, 1, 0, -0.35761485, 0, 0.9338692, -268.89868, 52.03728, -225.26564)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup17" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21.395393, -15.818508, 32.617554)
+
+[node name="palm1_02" parent="Decor/DecorGroup17" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 1.94664, -15.134407, 30.18103)
+
+[node name="palm1_03" parent="Decor/DecorGroup17" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13.376015, -12.275303, -41.881767)
+
+[node name="palm1_04" parent="Decor/DecorGroup17" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20.580318, -13.749001, 14.853004)
+
+[node name="palm1_05" parent="Decor/DecorGroup17" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.707245, -13.178417, -5.38179)
+
+[node name="palm1_06" parent="Decor/DecorGroup17" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13.319344, -14.053795, 1.8565521)
+
+[node name="palm1_07" parent="Decor/DecorGroup17" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.369553, -14.38398, 5.686432)
+
+[node name="palm1_08" parent="Decor/DecorGroup17" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 6.780159, -14.3675, 12.479752)
+
+[node name="palm1_09" parent="Decor/DecorGroup17" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.396309, -14.056927, 22.389252)
+
+[node name="palm1_10" parent="Decor/DecorGroup17" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.107155, -12.729717, -14.653015)
+
+[node name="DecorGroup18" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.3328713, 0, -0.9429723, 0, 1, 0, 0.9429723, 0, -0.3328713, -203.86072, 500, -206.15894)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup18" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -35.793007, -464.27692, -25.734741)
+
+[node name="palm1_02" parent="Decor/DecorGroup18" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -41.48361, -463.20416, -8.271378)
+
+[node name="palm1_03" parent="Decor/DecorGroup18" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.966606, -463.54865, 7.692276)
+
+[node name="palm1_04" parent="Decor/DecorGroup18" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.341919, -461.97714, 43.332825)
+
+[node name="palm1_05" parent="Decor/DecorGroup18" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.59671, -464.35962, -10.853653)
+
+[node name="palm1_06" parent="Decor/DecorGroup18" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -37.916626, -462.49548, 7.7529907)
+
+[node name="palm1_07" parent="Decor/DecorGroup18" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 26.850098, -466.3824, -27.203201)
+
+[node name="palm1_08" parent="Decor/DecorGroup18" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 42.224533, -466.97058, -25.776764)
+
+[node name="palm1_09" parent="Decor/DecorGroup18" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.645096, -464.33887, 2.465683)
+
+[node name="palm1_10" parent="Decor/DecorGroup18" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.590904, -462.7591, 51.823875)
+
+[node name="DecorGroup19" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.60991585, 0, -0.7924662, 0, 1, 0, 0.7924662, 0, 0.60991585, -245.63641, 500, -126.018295)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup19" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.5194244, -467.70966, 6.2319794)
+
+[node name="palm1_02" parent="Decor/DecorGroup19" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.339706, -467.1972, 11.244141)
+
+[node name="palm1_03" parent="Decor/DecorGroup19" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -42.24768, -464.71362, -22.974415)
+
+[node name="palm1_04" parent="Decor/DecorGroup19" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 15.786774, -469.40872, 21.90564)
+
+[node name="palm1_05" parent="Decor/DecorGroup19" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21.741013, -468.8078, -12.133476)
+
+[node name="palm1_06" parent="Decor/DecorGroup19" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.800827, -469.2205, 29.507797)
+
+[node name="palm1_07" parent="Decor/DecorGroup19" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 35.784515, -470.09894, 4.3374634)
+
+[node name="palm1_08" parent="Decor/DecorGroup19" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.5494232, -466.90726, -37.020004)
+
+[node name="palm1_09" parent="Decor/DecorGroup19" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.598877, -468.10477, -34.898094)
+
+[node name="palm1_10" parent="Decor/DecorGroup19" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.9855804, -467.2577, -45.721756)
+
+[node name="DecorGroup20" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.89628863, 0, 0.44347116, 0, 1, 0, -0.44347116, 0, -0.89628863, -172.56384, 500, -146.7624)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup20" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.468674, -468.76746, 11.687233)
+
+[node name="palm1_02" parent="Decor/DecorGroup20" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.2223206, -468.17645, 4.009018)
+
+[node name="palm1_03" parent="Decor/DecorGroup20" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.9975433, -467.79987, 2.596161)
+
+[node name="palm1_04" parent="Decor/DecorGroup20" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36.40547, -465.87665, 12.88118)
+
+[node name="palm1_05" parent="Decor/DecorGroup20" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 31.997528, -466.39606, 4.8712387)
+
+[node name="palm1_06" parent="Decor/DecorGroup20" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.4447327, -468.96396, -13.717705)
+
+[node name="palm1_07" parent="Decor/DecorGroup20" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32.245224, -469.30862, 23.05275)
+
+[node name="palm1_08" parent="Decor/DecorGroup20" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.823883, -470.41513, -26.016449)
+
+[node name="palm1_09" parent="Decor/DecorGroup20" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.000137, -469.16388, -11.250687)
+
+[node name="palm1_10" parent="Decor/DecorGroup20" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 22.165176, -466.15558, 26.379684)
+
+[node name="DecorGroup21" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.7928682, 0, 0.6093932, 0, 1, 0, -0.6093932, 0, 0.7928682, -300.26852, 500, -162.19788)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup21" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 25.82695, -463.22974, -13.837173)
+
+[node name="palm1_02" parent="Decor/DecorGroup21" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -41.144096, -463.88174, -34.179306)
+
+[node name="palm1_03" parent="Decor/DecorGroup21" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -35.92501, -466.09982, 5.984558)
+
+[node name="palm1_04" parent="Decor/DecorGroup21" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -39.181984, -465.71152, -2.077774)
+
+[node name="palm1_05" parent="Decor/DecorGroup21" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28.387642, -465.97043, 34.561844)
+
+[node name="palm1_06" parent="Decor/DecorGroup21" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.265297, -466.7821, 43.570724)
+
+[node name="palm1_07" parent="Decor/DecorGroup21" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 19.673073, -463.60968, -9.695709)
+
+[node name="palm1_08" parent="Decor/DecorGroup21" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -21.554985, -463.50836, -30.797852)
+
+[node name="palm1_09" parent="Decor/DecorGroup21" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.6144485, -464.5814, 0.8677521)
+
+[node name="palm1_10" parent="Decor/DecorGroup21" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.3247223, -464.667, 1.7634888)
+
+[node name="DecorGroup22" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9863354, 0, -0.16474977, 0, 1, 0, 0.16474977, 0, -0.9863354, -217.01422, 500, -336.96307)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup22" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20.339981, -456.8213, 41.23381)
+
+[node name="palm1_02" parent="Decor/DecorGroup22" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.246895, -459.51025, -17.20665)
+
+[node name="palm1_03" parent="Decor/DecorGroup22" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 6.0223465, -459.96872, -40.27709)
+
+[node name="palm1_04" parent="Decor/DecorGroup22" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.33049, -459.22076, -9.951236)
+
+[node name="palm1_05" parent="Decor/DecorGroup22" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.2525635, -456.95798, 45.730087)
+
+[node name="palm1_06" parent="Decor/DecorGroup22" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 23.734001, -457.69476, 11.660703)
+
+[node name="palm1_07" parent="Decor/DecorGroup22" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.263359, -460.15314, -46.69389)
+
+[node name="palm1_08" parent="Decor/DecorGroup22" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 10.533073, -458.40118, -0.057673454)
+
+[node name="palm1_09" parent="Decor/DecorGroup22" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.4660568, -458.74002, -4.600993)
+
+[node name="palm1_10" parent="Decor/DecorGroup22" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 15.265907, -457.5755, 20.793915)
+
+[node name="DecorGroup23" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9934384, 0, 0.114368126, 0, 1, 0, -0.114368126, 0, -0.9934384, -131.5654, 500, -301.6129)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup23" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -27.30046, -464.97775, 20.56562)
+
+[node name="palm1_02" parent="Decor/DecorGroup23" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -10.304245, -463.9333, 16.52647)
+
+[node name="palm1_03" parent="Decor/DecorGroup23" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -14.127243, -464.59018, -1.5982628)
+
+[node name="palm1_04" parent="Decor/DecorGroup23" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 22.240906, -462.1135, 10.9881115)
+
+[node name="palm1_05" parent="Decor/DecorGroup23" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -8.098938, -463.71918, 19.6241)
+
+[node name="palm1_06" parent="Decor/DecorGroup23" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 12.409119, -463.35736, -16.47504)
+
+[node name="palm1_07" parent="Decor/DecorGroup23" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 11.456619, -462.56686, 17.810255)
+
+[node name="palm1_08" parent="Decor/DecorGroup23" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 1.2951508, -464.8245, -47.5149)
+
+[node name="palm1_09" parent="Decor/DecorGroup23" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 8.879501, -462.27972, 36.049698)
+
+[node name="palm1_10" parent="Decor/DecorGroup23" instance=ExtResource("19_48w17")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 47.707123, -460.35483, 28.51921)
+
+[node name="DecorGroup24" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.52381057, 0, 0.8518347, 0, 1, 0, -0.8518347, 0, 0.52381057, -73.54584, 500, -232.3002)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup24" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 35.16297, -466.65985, -42.841583)
+
+[node name="palm1_02" parent="Decor/DecorGroup24" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.376831, -469.6879, 3.2824402)
+
+[node name="palm1_03" parent="Decor/DecorGroup24" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -30.85408, -471.45035, 30.437927)
+
+[node name="palm1_04" parent="Decor/DecorGroup24" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.3930283, -470.12836, 10.276489)
+
+[node name="palm1_05" parent="Decor/DecorGroup24" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.804, -473.4468, 48.019012)
+
+[node name="palm1_06" parent="Decor/DecorGroup24" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -37.405968, -467.65195, -24.555359)
+
+[node name="palm1_07" parent="Decor/DecorGroup24" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.414803, -468.6761, -12.749512)
+
+[node name="palm1_08" parent="Decor/DecorGroup24" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -22.227333, -470.90103, 22.459656)
+
+[node name="palm1_09" parent="Decor/DecorGroup24" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.356277, -471.23398, 23.57248)
+
+[node name="palm1_10" parent="Decor/DecorGroup24" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.5504837, -470.58762, 16.26651)
+
+[node name="DecorGroup25" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.98003787, 0, -0.19881104, 0, 1, 0, 0.19881104, 0, 0.98003787, -268.89868, 52.03728, -225.26564)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup25" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21.395393, -15.818508, 32.617554)
+
+[node name="palm1_02" parent="Decor/DecorGroup25" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 1.94664, -15.134407, 30.18103)
+
+[node name="palm1_03" parent="Decor/DecorGroup25" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13.376015, -12.275303, -41.881767)
+
+[node name="palm1_04" parent="Decor/DecorGroup25" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20.580318, -13.749001, 14.853004)
+
+[node name="palm1_05" parent="Decor/DecorGroup25" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.707245, -13.178417, -5.38179)
+
+[node name="palm1_06" parent="Decor/DecorGroup25" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13.319344, -14.053795, 1.8565521)
+
+[node name="palm1_07" parent="Decor/DecorGroup25" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.369553, -14.38398, 5.686432)
+
+[node name="palm1_08" parent="Decor/DecorGroup25" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 6.780159, -14.3675, 12.479752)
+
+[node name="palm1_09" parent="Decor/DecorGroup25" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.396309, -14.056927, 22.389252)
+
+[node name="palm1_10" parent="Decor/DecorGroup25" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.107155, -12.729717, -14.653015)
+
+[node name="DecorGroup26" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.3328713, 0, -0.9429723, 0, 1, 0, 0.9429723, 0, -0.3328713, -203.86072, 500, -206.15894)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup26" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -35.793007, -464.27692, -25.734741)
+
+[node name="palm1_02" parent="Decor/DecorGroup26" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -41.48361, -463.20416, -8.271378)
+
+[node name="palm1_03" parent="Decor/DecorGroup26" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.966606, -463.54865, 7.692276)
+
+[node name="palm1_04" parent="Decor/DecorGroup26" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.341919, -461.97714, 43.332825)
+
+[node name="palm1_05" parent="Decor/DecorGroup26" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.59671, -464.35962, -10.853653)
+
+[node name="palm1_06" parent="Decor/DecorGroup26" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -37.916626, -462.49548, 7.7529907)
+
+[node name="palm1_07" parent="Decor/DecorGroup26" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 26.850098, -466.3824, -27.203201)
+
+[node name="palm1_08" parent="Decor/DecorGroup26" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 42.224533, -466.97058, -25.776764)
+
+[node name="palm1_09" parent="Decor/DecorGroup26" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.645096, -464.33887, 2.465683)
+
+[node name="palm1_10" parent="Decor/DecorGroup26" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.590904, -462.7591, 51.823875)
+
+[node name="DecorGroup27" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.60991585, 0, -0.7924662, 0, 1, 0, 0.7924662, 0, 0.60991585, -245.63641, 500, -126.018295)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup27" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.5194244, -467.70966, 6.2319794)
+
+[node name="palm1_02" parent="Decor/DecorGroup27" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.339706, -467.1972, 11.244141)
+
+[node name="palm1_03" parent="Decor/DecorGroup27" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -42.24768, -464.71362, -22.974415)
+
+[node name="palm1_04" parent="Decor/DecorGroup27" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 15.786774, -469.40872, 21.90564)
+
+[node name="palm1_05" parent="Decor/DecorGroup27" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21.741013, -468.8078, -12.133476)
+
+[node name="palm1_06" parent="Decor/DecorGroup27" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.800827, -469.2205, 29.507797)
+
+[node name="palm1_07" parent="Decor/DecorGroup27" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 35.784515, -470.09894, 4.3374634)
+
+[node name="palm1_08" parent="Decor/DecorGroup27" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.5494232, -466.90726, -37.020004)
+
+[node name="palm1_09" parent="Decor/DecorGroup27" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.598877, -468.10477, -34.898094)
+
+[node name="palm1_10" parent="Decor/DecorGroup27" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.9855804, -467.2577, -45.721756)
+
+[node name="DecorGroup28" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.89628863, 0, 0.44347116, 0, 1, 0, -0.44347116, 0, -0.89628863, -172.56384, 500, -146.7624)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup28" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.468674, -468.76746, 11.687233)
+
+[node name="palm1_02" parent="Decor/DecorGroup28" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.2223206, -468.17645, 4.009018)
+
+[node name="palm1_03" parent="Decor/DecorGroup28" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.9975433, -467.79987, 2.596161)
+
+[node name="palm1_04" parent="Decor/DecorGroup28" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36.40547, -465.87665, 12.88118)
+
+[node name="palm1_05" parent="Decor/DecorGroup28" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 31.997528, -466.39606, 4.8712387)
+
+[node name="palm1_06" parent="Decor/DecorGroup28" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.4447327, -468.96396, -13.717705)
+
+[node name="palm1_07" parent="Decor/DecorGroup28" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32.245224, -469.30862, 23.05275)
+
+[node name="palm1_08" parent="Decor/DecorGroup28" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.823883, -470.41513, -26.016449)
+
+[node name="palm1_09" parent="Decor/DecorGroup28" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.000137, -469.16388, -11.250687)
+
+[node name="palm1_10" parent="Decor/DecorGroup28" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 22.165176, -466.15558, 26.379684)
+
+[node name="DecorGroup29" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.7928682, 0, 0.6093932, 0, 1, 0, -0.6093932, 0, 0.7928682, -300.26852, 500, -162.19788)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup29" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 25.82695, -463.22974, -13.837173)
+
+[node name="palm1_02" parent="Decor/DecorGroup29" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -41.144096, -463.88174, -34.179306)
+
+[node name="palm1_03" parent="Decor/DecorGroup29" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -35.92501, -466.09982, 5.984558)
+
+[node name="palm1_04" parent="Decor/DecorGroup29" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -39.181984, -465.71152, -2.077774)
+
+[node name="palm1_05" parent="Decor/DecorGroup29" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28.387642, -465.97043, 34.561844)
+
+[node name="palm1_06" parent="Decor/DecorGroup29" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.265297, -466.7821, 43.570724)
+
+[node name="palm1_07" parent="Decor/DecorGroup29" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 19.673073, -463.60968, -9.695709)
+
+[node name="palm1_08" parent="Decor/DecorGroup29" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -21.554985, -463.50836, -30.797852)
+
+[node name="palm1_09" parent="Decor/DecorGroup29" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.6144485, -464.5814, 0.8677521)
+
+[node name="palm1_10" parent="Decor/DecorGroup29" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.3247223, -464.667, 1.7634888)
+
+[node name="DecorGroup30" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9863354, 0, -0.16474977, 0, 1, 0, 0.16474977, 0, -0.9863354, -217.01422, 500, -336.96307)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup30" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20.339981, -456.8213, 41.23381)
+
+[node name="palm1_02" parent="Decor/DecorGroup30" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.246895, -459.51025, -17.20665)
+
+[node name="palm1_03" parent="Decor/DecorGroup30" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 6.0223465, -459.96872, -40.27709)
+
+[node name="palm1_04" parent="Decor/DecorGroup30" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.33049, -459.22076, -9.951236)
+
+[node name="palm1_05" parent="Decor/DecorGroup30" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.2525635, -456.95798, 45.730087)
+
+[node name="palm1_06" parent="Decor/DecorGroup30" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 23.734001, -457.69476, 11.660703)
+
+[node name="palm1_07" parent="Decor/DecorGroup30" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.263359, -460.15314, -46.69389)
+
+[node name="palm1_08" parent="Decor/DecorGroup30" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 10.533073, -458.40118, -0.057673454)
+
+[node name="palm1_09" parent="Decor/DecorGroup30" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.4660568, -458.74002, -4.600993)
+
+[node name="palm1_10" parent="Decor/DecorGroup30" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 15.265907, -457.5755, 20.793915)
+
+[node name="DecorGroup31" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9934384, 0, 0.114368126, 0, 1, 0, -0.114368126, 0, -0.9934384, -131.5654, 500, -301.6129)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup31" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -27.30046, -464.97775, 20.56562)
+
+[node name="palm1_02" parent="Decor/DecorGroup31" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -10.304245, -463.9333, 16.52647)
+
+[node name="palm1_03" parent="Decor/DecorGroup31" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -14.127243, -464.59018, -1.5982628)
+
+[node name="palm1_04" parent="Decor/DecorGroup31" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 22.240906, -462.1135, 10.9881115)
+
+[node name="palm1_05" parent="Decor/DecorGroup31" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -8.098938, -463.71918, 19.6241)
+
+[node name="palm1_06" parent="Decor/DecorGroup31" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 12.409119, -463.35736, -16.47504)
+
+[node name="palm1_07" parent="Decor/DecorGroup31" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 11.456619, -462.56686, 17.810255)
+
+[node name="palm1_08" parent="Decor/DecorGroup31" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 1.2951508, -464.8245, -47.5149)
+
+[node name="palm1_09" parent="Decor/DecorGroup31" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 8.879501, -462.27972, 36.049698)
+
+[node name="palm1_10" parent="Decor/DecorGroup31" instance=ExtResource("19_48w17")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 47.707123, -460.35483, 28.51921)
+
+[node name="DecorGroup32" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.52381057, 0, 0.8518347, 0, 1, 0, -0.8518347, 0, 0.52381057, -73.54584, 500, -232.3002)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup32" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 35.16297, -466.65985, -42.841583)
+
+[node name="palm1_02" parent="Decor/DecorGroup32" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.376831, -469.6879, 3.2824402)
+
+[node name="palm1_03" parent="Decor/DecorGroup32" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -30.85408, -471.45035, 30.437927)
+
+[node name="palm1_04" parent="Decor/DecorGroup32" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.3930283, -470.12836, 10.276489)
+
+[node name="palm1_05" parent="Decor/DecorGroup32" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.804, -473.4468, 48.019012)
+
+[node name="palm1_06" parent="Decor/DecorGroup32" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -37.405968, -467.65195, -24.555359)
+
+[node name="palm1_07" parent="Decor/DecorGroup32" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.414803, -468.6761, -12.749512)
+
+[node name="palm1_08" parent="Decor/DecorGroup32" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -22.227333, -470.90103, 22.459656)
+
+[node name="palm1_09" parent="Decor/DecorGroup32" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.356277, -471.23398, 23.57248)
+
+[node name="palm1_10" parent="Decor/DecorGroup32" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.5504837, -470.58762, 16.26651)
+
+[node name="DecorGroup33" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.09961075, 0, 0.99502647, 0, 1, 0, -0.99502647, 0, 0.09961075, 63.70862, 52.03728, -275.59424)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup33" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36.347443, -9.328693, 30.944527)
+
+[node name="palm1_02" parent="Decor/DecorGroup33" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.9442444, -8.434219, -13.642925)
+
+[node name="palm1_03" parent="Decor/DecorGroup33" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32.414658, -7.5356674, -22.44989)
+
+[node name="palm1_04" parent="Decor/DecorGroup33" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -22.840485, -7.58799, 25.002464)
+
+[node name="palm1_05" parent="Decor/DecorGroup33" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24.102142, -9.04599, 8.631378)
+
+[node name="palm1_06" parent="Decor/DecorGroup33" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.611847, -8.295803, 10.508972)
+
+[node name="palm1_07" parent="Decor/DecorGroup33" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16.556732, -8.828964, 1.879818)
+
+[node name="palm1_08" parent="Decor/DecorGroup33" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -21.052826, -7.6561623, 6.798237)
+
+[node name="palm1_09" parent="Decor/DecorGroup33" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.274902, -8.55344, 0.513813)
+
+[node name="palm1_10" parent="Decor/DecorGroup33" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 10.977234, -8.772354, -12.537024)
+
+[node name="DecorGroup34" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.092724465, 0, -0.99569184, 0, 1, 0, 0.99569184, 0, 0.092724465, 128.74658, 500, -256.48752)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup34" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.4950104, -455.8874, 5.294449)
+
+[node name="palm1_02" parent="Decor/DecorGroup34" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -33.60573, -456.5495, 27.520195)
+
+[node name="palm1_03" parent="Decor/DecorGroup34" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.8326416, -456.02603, -3.0168)
+
+[node name="palm1_04" parent="Decor/DecorGroup34" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.3868103, -455.8585, 24.365509)
+
+[node name="palm1_05" parent="Decor/DecorGroup34" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13.252991, -456.70087, -34.246216)
+
+[node name="palm1_06" parent="Decor/DecorGroup34" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -48.91545, -457.36597, -17.581879)
+
+[node name="palm1_07" parent="Decor/DecorGroup34" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 43.013702, -455.1815, 28.022095)
+
+[node name="palm1_08" parent="Decor/DecorGroup34" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.8272705, -456.2694, -9.318832)
+
+[node name="palm1_09" parent="Decor/DecorGroup34" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.093277, -456.0996, -5.960678)
+
+[node name="palm1_10" parent="Decor/DecorGroup34" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 11.761444, -456.07755, -9.3988495)
+
+[node name="DecorGroup35" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.8758877, 0, 0.482515, 0, 1, 0, -0.482515, 0, 0.8758877, 86.97089, 500, -176.34688)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup35" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.0776825, -454.628, -17.133972)
+
+[node name="palm1_02" parent="Decor/DecorGroup35" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -22.330017, -454.61502, -34.14653)
+
+[node name="palm1_03" parent="Decor/DecorGroup35" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.940567, -454.7556, -40.289795)
+
+[node name="palm1_04" parent="Decor/DecorGroup35" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -45.789993, -454.4489, -22.420868)
+
+[node name="palm1_05" parent="Decor/DecorGroup35" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 42.016724, -455.34708, -20.601852)
+
+[node name="palm1_06" parent="Decor/DecorGroup35" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.269379, -454.90753, -4.2363205)
+
+[node name="palm1_07" parent="Decor/DecorGroup35" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 10.448013, -455.26727, 20.756653)
+
+[node name="palm1_08" parent="Decor/DecorGroup35" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 38.74141, -455.87378, 24.27301)
+
+[node name="palm1_09" parent="Decor/DecorGroup35" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -25.45903, -454.85898, 22.914581)
+
+[node name="palm1_10" parent="Decor/DecorGroup35" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.5808258, -454.74487, -23.79367)
+
+[node name="DecorGroup36" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.3677279, 0, 0.9299334, 0, 1, 0, -0.9299334, 0, -0.3677279, 160.04346, 500, -197.09099)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup36" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.80007935, -455.67847, -34.306488)
+
+[node name="palm1_02" parent="Decor/DecorGroup36" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8.306419, -456.9195, 4.218506)
+
+[node name="palm1_03" parent="Decor/DecorGroup36" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -40.96711, -458.0382, 8.5121)
+
+[node name="palm1_04" parent="Decor/DecorGroup36" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8.185738, -457.69672, 25.980133)
+
+[node name="palm1_05" parent="Decor/DecorGroup36" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16.763565, -456.2073, -25.278107)
+
+[node name="palm1_06" parent="Decor/DecorGroup36" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 30.253525, -456.43457, 9.363022)
+
+[node name="palm1_07" parent="Decor/DecorGroup36" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.03517151, -456.21893, -12.812851)
+
+[node name="palm1_08" parent="Decor/DecorGroup36" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.337784, -457.367, 8.987305)
+
+[node name="palm1_09" parent="Decor/DecorGroup36" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.980003, -456.7691, -9.021896)
+
+[node name="palm1_10" parent="Decor/DecorGroup36" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.9226456, -456.74042, 0.57385254)
+
+[node name="DecorGroup37" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.99909294, 0, 0.042582657, 0, 1, 0, -0.042582657, 0, -0.99909294, 32.338776, 500, -212.52646)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup37" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16.837074, -454.52234, -28.405853)
+
+[node name="palm1_02" parent="Decor/DecorGroup37" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.333408, -455.74927, 44.52771)
+
+[node name="palm1_03" parent="Decor/DecorGroup37" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.1256027, -454.66492, -12.998749)
+
+[node name="palm1_04" parent="Decor/DecorGroup37" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.825523, -454.5134, -38.654724)
+
+[node name="palm1_05" parent="Decor/DecorGroup37" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.16151, -454.7848, -0.9834595)
+
+[node name="palm1_06" parent="Decor/DecorGroup37" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.455126, -455.03104, 9.587128)
+
+[node name="palm1_07" parent="Decor/DecorGroup37" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 6.8927917, -454.8925, 1.5903625)
+
+[node name="palm1_08" parent="Decor/DecorGroup37" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.9291115, -454.94318, 8.275436)
+
+[node name="palm1_09" parent="Decor/DecorGroup37" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.553963, -455.12463, 18.926239)
+
+[node name="palm1_10" parent="Decor/DecorGroup37" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.47698212, -454.50873, -28.692093)
+
+[node name="DecorGroup38" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.35723186, 0, 0.93401575, 0, 1, 0, -0.93401575, 0, 0.35723186, 115.59308, 500, -387.29166)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup38" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8.866211, -460.81406, 0.89102936)
+
+[node name="palm1_02" parent="Decor/DecorGroup38" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.9887695, -452.00665, -0.45053864)
+
+[node name="palm1_03" parent="Decor/DecorGroup38" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.58905, -461.36917, 26.9814)
+
+[node name="palm1_04" parent="Decor/DecorGroup38" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -14.602905, -462.1219, -47.21765)
+
+[node name="palm1_05" parent="Decor/DecorGroup38" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 35.435303, -464.226, -5.472)
+
+[node name="palm1_06" parent="Decor/DecorGroup38" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -50.450165, -458.89526, -8.410866)
+
+[node name="palm1_07" parent="Decor/DecorGroup38" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8.039673, -460.40823, 19.468048)
+
+[node name="palm1_08" parent="Decor/DecorGroup38" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.781464, -459.61243, 15.780136)
+
+[node name="palm1_09" parent="Decor/DecorGroup38" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 34.064667, -462.9846, 36.78334)
+
+[node name="palm1_10" parent="Decor/DecorGroup38" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.993805, -461.3081, -11.897812)
+
+[node name="DecorGroup39" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9753171, 0, 0.22080842, 0, 1, 0, -0.22080842, 0, -0.9753171, 201.0419, 500, -351.9415)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup39" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2.0000005, 0, 0, 0, 2, 0, 0, 0, 2.0000005, 30.227821, -463.04324, 44.952545)
+
+[node name="palm1_02" parent="Decor/DecorGroup39" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2.0000005, 0, 0, 0, 2, 0, 0, 0, 2.0000005, -3.2730637, -460.77216, 3.0878296)
+
+[node name="palm1_03" parent="Decor/DecorGroup39" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2.0000005, 0, 0, 0, 2, 0, 0, 0, 2.0000005, -30.66613, -460.83658, -14.673157)
+
+[node name="palm1_04" parent="Decor/DecorGroup39" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2.0000005, 0, 0, 0, 2, 0, 0, 0, 2.0000005, 48.19742, -459.94476, -0.56066895)
+
+[node name="palm1_05" parent="Decor/DecorGroup39" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2.0000005, 0, 0, 0, 2, 0, 0, 0, 2.0000005, 24.641571, -462.64664, 39.38803)
+
+[node name="palm1_06" parent="Decor/DecorGroup39" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2.0000005, 0, 0, 0, 2, 0, 0, 0, 2.0000005, 25.57682, -458.63074, -29.75357)
+
+[node name="palm1_07" parent="Decor/DecorGroup39" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2.0000005, 0, 0, 0, 2, 0, 0, 0, 2.0000005, -3.4708633, -460.48816, -2.6132202)
+
+[node name="palm1_08" parent="Decor/DecorGroup39" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2.0000005, 0, 0, 0, 2, 0, 0, 0, 2.0000005, -0.03037262, -462.0233, 25.669525)
+
+[node name="palm1_09" parent="Decor/DecorGroup39" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2.0000005, 0, 0, 0, 2, 0, 0, 0, 2.0000005, 7.24617, -460.5718, 3.8546448)
+
+[node name="palm1_10" parent="Decor/DecorGroup39" instance=ExtResource("19_48w17")]
+transform = Transform3D(2.0000005, 0, 0, 0, 2, 0, 0, 0, 2.0000005, -23.399117, -460.35452, -19.181458)
+
+[node name="DecorGroup40" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.11893701, 0, 0.99290174, 0, 1, 0, -0.99290174, 0, -0.11893701, 259.06146, 500, -282.62878)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup40" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.366287, -461.23257, -6.5997314)
+
+[node name="palm1_02" parent="Decor/DecorGroup40" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.3736725, -458.40662, -54.918762)
+
+[node name="palm1_03" parent="Decor/DecorGroup40" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12.6497345, -458.75705, -47.243454)
+
+[node name="palm1_04" parent="Decor/DecorGroup40" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.2624664, -459.47168, -35.524002)
+
+[node name="palm1_05" parent="Decor/DecorGroup40" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 38.01686, -463.48505, 20.714844)
+
+[node name="palm1_06" parent="Decor/DecorGroup40" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 41.915024, -460.43866, -28.005432)
+
+[node name="palm1_07" parent="Decor/DecorGroup40" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12.296951, -461.5912, -1.5947266)
+
+[node name="palm1_08" parent="Decor/DecorGroup40" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.8274384, -461.08624, -8.461792)
+
+[node name="palm1_09" parent="Decor/DecorGroup40" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.391846, -464.53696, 36.49243)
+
+[node name="palm1_10" parent="Decor/DecorGroup40" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.9233704, -460.23602, -20.998016)
+
+[node name="DecorGroup41" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9772163, 0, 0.21224584, 0, 1, 0, -0.21224584, 0, -0.9772163, 63.70862, 52.03728, -275.59424)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup41" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 30.238522, -9.370918, 18.114716)
+
+[node name="palm1_02" parent="Decor/DecorGroup41" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21.282001, -8.767788, 5.9702454)
+
+[node name="palm1_03" parent="Decor/DecorGroup41" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13.275509, -8.20549, -7.7282104)
+
+[node name="palm1_04" parent="Decor/DecorGroup41" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.9906693, -8.140808, -4.100891)
+
+[node name="palm1_05" parent="Decor/DecorGroup41" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.4348297, -8.384289, 0.3433838)
+
+[node name="palm1_06" parent="Decor/DecorGroup41" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.2009583, -8.292015, 1.7053528)
+
+[node name="palm1_07" parent="Decor/DecorGroup41" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -38.752754, -7.9529495, -3.456421)
+
+[node name="palm1_08" parent="Decor/DecorGroup41" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12.379421, -9.375999, 36.266785)
+
+[node name="palm1_09" parent="Decor/DecorGroup41" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.604336, -8.183693, 1.2334595)
+
+[node name="palm1_10" parent="Decor/DecorGroup41" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.4262543, -7.4848213, -31.52832)
+
+[node name="DecorGroup42" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.10622259, 0, -0.9943424, 0, 1, 0, 0.9943424, 0, -0.10622259, 128.74658, 500, -256.48752)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup42" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -18.66922, -456.28403, 25.358711)
+
+[node name="palm1_02" parent="Decor/DecorGroup42" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 15.09845, -455.46954, 37.211143)
+
+[node name="palm1_03" parent="Decor/DecorGroup42" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.679932, -456.44095, 14.606117)
+
+[node name="palm1_04" parent="Decor/DecorGroup42" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.3144226, -456.02966, -5.3812866)
+
+[node name="palm1_05" parent="Decor/DecorGroup42" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.4167175, -455.76846, 25.841003)
+
+[node name="palm1_06" parent="Decor/DecorGroup42" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.977722, -455.75223, 19.030869)
+
+[node name="palm1_07" parent="Decor/DecorGroup42" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 30.753922, -455.34033, 19.813316)
+
+[node name="palm1_08" parent="Decor/DecorGroup42" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.683014, -449.48267, -9.512871)
+
+[node name="palm1_09" parent="Decor/DecorGroup42" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 42.37761, -456.23816, -27.036156)
+
+[node name="palm1_10" parent="Decor/DecorGroup42" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.3248596, -449.652, -5.972397)
+
+[node name="DecorGroup43" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.2893242, 0, 0.95723116, 0, 1, 0, -0.95723116, 0, 0.2893242, 86.97089, 500, -176.34688)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup43" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2.0000002, 0, -5.9604645e-08, 0, 2, 0, 5.9604645e-08, 0, 2.0000002, 22.484467, -455.4742, 29.430809)
+
+[node name="palm1_02" parent="Decor/DecorGroup43" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2.0000002, 0, -5.9604645e-08, 0, 2, 0, 5.9604645e-08, 0, 2.0000002, -14.936111, -454.56793, -21.35308)
+
+[node name="palm1_03" parent="Decor/DecorGroup43" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2.0000002, 0, -5.9604645e-08, 0, 2, 0, 5.9604645e-08, 0, 2.0000002, -14.897537, -455.44946, 28.591919)
+
+[node name="palm1_04" parent="Decor/DecorGroup43" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2.0000002, 0, -5.9604645e-08, 0, 2, 0, 5.9604645e-08, 0, 2.0000002, -5.9947205, -454.72333, -7.3283005)
+
+[node name="palm1_05" parent="Decor/DecorGroup43" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2.0000002, 0, -5.9604645e-08, 0, 2, 0, 5.9604645e-08, 0, 2.0000002, 1.8468018, -455.2713, 22.963253)
+
+[node name="palm1_06" parent="Decor/DecorGroup43" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2.0000002, 0, -5.9604645e-08, 0, 2, 0, 5.9604645e-08, 0, 2.0000002, -16.298355, -455.2908, 22.197838)
+
+[node name="palm1_07" parent="Decor/DecorGroup43" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2.0000002, 0, -5.9604645e-08, 0, 2, 0, 5.9604645e-08, 0, 2.0000002, 15.939178, -455.06006, 10.325016)
+
+[node name="palm1_08" parent="Decor/DecorGroup43" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2.0000002, 0, -5.9604645e-08, 0, 2, 0, 5.9604645e-08, 0, 2.0000002, 4.847183, -454.84143, -1.0975456)
+
+[node name="palm1_09" parent="Decor/DecorGroup43" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2.0000002, 0, -5.9604645e-08, 0, 2, 0, 5.9604645e-08, 0, 2.0000002, -17.146088, -455.0241, 10.823124)
+
+[node name="palm1_10" parent="Decor/DecorGroup43" instance=ExtResource("19_48w17")]
+transform = Transform3D(2.0000002, 0, -5.9604645e-08, 0, 2, 0, 5.9604645e-08, 0, 2.0000002, 17.52678, -454.81592, -9.432095)
+
+[node name="DecorGroup44" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.030722031, 0, 0.999528, 0, 1, 0, -0.999528, 0, 0.030722031, 160.04346, 500, -197.09099)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup44" instance=ExtResource("10_alvx4")]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, -1.0227966, -456.46796, -3.873932)
+
+[node name="palm1_02" parent="Decor/DecorGroup44" instance=ExtResource("11_upsw8")]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 12.645981, -456.70874, 4.6226196)
+
+[node name="palm1_03" parent="Decor/DecorGroup44" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 39.254913, -457.4372, 25.081451)
+
+[node name="palm1_04" parent="Decor/DecorGroup44" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 46.160126, -456.07104, -21.632843)
+
+[node name="palm1_05" parent="Decor/DecorGroup44" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 54.303497, -456.42896, -9.408417)
+
+[node name="palm1_06" parent="Decor/DecorGroup44" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, -23.077148, -450.56677, 0.41584778)
+
+[node name="palm1_07" parent="Decor/DecorGroup44" instance=ExtResource("16_30m8a")]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, -12.34761, -456.41513, -7.5163574)
+
+[node name="palm1_08" parent="Decor/DecorGroup44" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 4.4663696, -455.2614, -48.43834)
+
+[node name="palm1_09" parent="Decor/DecorGroup44" instance=ExtResource("18_t0vre")]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, -30.244446, -456.66132, -5.8461)
+
+[node name="palm1_10" parent="Decor/DecorGroup44" instance=ExtResource("19_48w17")]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, -11.410843, -456.5395, -3.7866364)
+
+[node name="DecorGroup45" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.9966756, 0, -0.0814722, 0, 1, 0, 0.0814722, 0, -0.9966756, 32.338776, 500, -212.52646)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup45" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -15.856667, -456.05136, 52.479477)
+
+[node name="palm1_02" parent="Decor/DecorGroup45" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -50.56527, -454.92432, -5.830124)
+
+[node name="palm1_03" parent="Decor/DecorGroup45" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -13.566536, -454.48358, -42.437042)
+
+[node name="palm1_04" parent="Decor/DecorGroup45" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -21.291504, -454.8816, 3.1433563)
+
+[node name="palm1_05" parent="Decor/DecorGroup45" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -3.6690903, -455.19046, 19.023163)
+
+[node name="palm1_06" parent="Decor/DecorGroup45" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 23.89135, -454.4347, -45.29782)
+
+[node name="palm1_07" parent="Decor/DecorGroup45" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -1.1713791, -455.1838, 18.430023)
+
+[node name="palm1_08" parent="Decor/DecorGroup45" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 15.923637, -455.23984, 18.417816)
+
+[node name="palm1_09" parent="Decor/DecorGroup45" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, 13.620377, -454.70862, -10.722214)
+
+[node name="palm1_10" parent="Decor/DecorGroup45" instance=ExtResource("19_48w17")]
+transform = Transform3D(2.0000002, 0, 0, 0, 2, 0, 0, 0, 2.0000002, -50.957626, -454.9195, -6.8788605)
+
+[node name="DecorGroup46" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.89295036, 0, -0.45015514, 0, 1, 0, 0.45015514, 0, -0.89295036, 115.59308, 500, -387.29166)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup46" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32.72371, -460.24933, -6.1147766)
+
+[node name="palm1_02" parent="Decor/DecorGroup46" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28.050995, -460.27475, -7.1555176)
+
+[node name="palm1_03" parent="Decor/DecorGroup46" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.590973, -461.80286, 9.664093)
+
+[node name="palm1_04" parent="Decor/DecorGroup46" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.791443, -462.71515, 7.934662)
+
+[node name="palm1_05" parent="Decor/DecorGroup46" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 38.79361, -460.82504, 5.05072)
+
+[node name="palm1_06" parent="Decor/DecorGroup46" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -10.9097595, -461.36917, -5.3682556)
+
+[node name="palm1_07" parent="Decor/DecorGroup46" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 17.904877, -462.01764, 16.11612)
+
+[node name="palm1_08" parent="Decor/DecorGroup46" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.2464905, -464.23495, 37.0831)
+
+[node name="palm1_09" parent="Decor/DecorGroup46" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -27.590698, -465.31046, 37.569397)
+
+[node name="palm1_10" parent="Decor/DecorGroup46" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.919342, -458.93103, -40.457123)
+
+[node name="DecorGroup47" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.996569, 0, 0.082765356, 0, 1, 0, -0.082765356, 0, -0.996569, 201.0419, 500, -351.9415)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup47" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2.0000002, 0, 1.4901161e-08, 0, 2, 0, -1.4901161e-08, 0, 2.0000002, 11.7408905, -461.2045, 18.892303)
+
+[node name="palm1_02" parent="Decor/DecorGroup47" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2.0000002, 0, 1.4901161e-08, 0, 2, 0, -1.4901161e-08, 0, 2.0000002, 1.3344879, -460.7579, 5.3217773)
+
+[node name="palm1_03" parent="Decor/DecorGroup47" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2.0000002, 0, 1.4901161e-08, 0, 2, 0, -1.4901161e-08, 0, 2.0000002, 36.196716, -460.74203, 18.033142)
+
+[node name="palm1_04" parent="Decor/DecorGroup47" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2.0000002, 0, 1.4901161e-08, 0, 2, 0, -1.4901161e-08, 0, 2.0000002, -35.613693, -461.0486, -22.867798)
+
+[node name="palm1_05" parent="Decor/DecorGroup47" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2.0000002, 0, 1.4901161e-08, 0, 2, 0, -1.4901161e-08, 0, 2.0000002, -8.018494, -461.16513, 7.551941)
+
+[node name="palm1_06" parent="Decor/DecorGroup47" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2.0000002, 0, 1.4901161e-08, 0, 2, 0, -1.4901161e-08, 0, 2.0000002, -27.278305, -462.03998, 9.94519)
+
+[node name="palm1_07" parent="Decor/DecorGroup47" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2.0000002, 0, 1.4901161e-08, 0, 2, 0, -1.4901161e-08, 0, 2.0000002, -10.7955475, -461.4147, 10.345062)
+
+[node name="palm1_08" parent="Decor/DecorGroup47" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2.0000002, 0, 1.4901161e-08, 0, 2, 0, -1.4901161e-08, 0, 2.0000002, -11.648773, -461.3114, 7.7849426)
+
+[node name="palm1_09" parent="Decor/DecorGroup47" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2.0000002, 0, 1.4901161e-08, 0, 2, 0, -1.4901161e-08, 0, 2.0000002, 39.85045, -458.19284, -31.874237)
+
+[node name="palm1_10" parent="Decor/DecorGroup47" instance=ExtResource("19_48w17")]
+transform = Transform3D(2.0000002, 0, 1.4901161e-08, 0, 2, 0, -1.4901161e-08, 0, 2.0000002, -16.576141, -461.55646, 8.899658)
+
+[node name="DecorGroup48" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.70284986, 0, -0.7113381, 0, 1, 0, 0.7113381, 0, 0.70284986, 259.06146, 500, -282.62878)
+scatter_radius = 56.0
+
+[node name="palm1_01" parent="Decor/DecorGroup48" instance=ExtResource("10_alvx4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -14.594391, -460.42508, 12.202484)
+
+[node name="palm1_02" parent="Decor/DecorGroup48" instance=ExtResource("11_upsw8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -34.38231, -462.14008, -26.492767)
+
+[node name="palm1_03" parent="Decor/DecorGroup48" instance=ExtResource("12_ohdhr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32.537445, -461.00552, -7.457184)
+
+[node name="palm1_04" parent="Decor/DecorGroup48" instance=ExtResource("13_2rcr2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8.093521, -461.11725, 3.6869812)
+
+[node name="palm1_05" parent="Decor/DecorGroup48" instance=ExtResource("14_ad3l7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.355286, -460.7608, 3.1752625)
+
+[node name="palm1_06" parent="Decor/DecorGroup48" instance=ExtResource("15_6vwf1")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.252914, -462.61957, -25.397308)
+
+[node name="palm1_07" parent="Decor/DecorGroup48" instance=ExtResource("16_30m8a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -38.451187, -462.5021, -33.445618)
+
+[node name="palm1_08" parent="Decor/DecorGroup48" instance=ExtResource("17_0wjs6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -3.1303406, -458.99506, 52.304565)
+
+[node name="palm1_09" parent="Decor/DecorGroup48" instance=ExtResource("18_t0vre")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.6297455, -461.27655, 4.5467834)
+
+[node name="palm1_10" parent="Decor/DecorGroup48" instance=ExtResource("19_48w17")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.7213135, -461.13947, 7.7113953)
+
+[node name="DecorGroup49" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.70284986, 0, -0.7113381, 0, 1, 0, 0.7113381, 0, 0.70284986, 131.75728, 500, -148.77406)
+scatter_radius = 12.0
+
+[node name="plant_01" parent="Decor/DecorGroup49" instance=ExtResource("20_ad3l7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.7015305, -456.46542, -5.115082)
+
+[node name="plant_02" parent="Decor/DecorGroup49" instance=ExtResource("21_6vwf1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.490997, -456.51056, 2.0052795)
+
+[node name="plant_03" parent="Decor/DecorGroup49" instance=ExtResource("22_30m8a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.954834, -456.26733, 8.101532)
+
+[node name="plant_04" parent="Decor/DecorGroup49" instance=ExtResource("23_0wjs6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.240074, -456.41965, 2.6462402)
+
+[node name="plant_05" parent="Decor/DecorGroup49" instance=ExtResource("24_t0vre")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.897995, -456.4221, 4.4032593)
+
+[node name="DecorGroup50" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.8740056, 0, 0.48591554, 0, 1, 0, -0.48591554, 0, -0.8740056, -17.415695, 500, -105.45578)
+scatter_radius = 12.0
+
+[node name="plant_01" parent="Decor/DecorGroup50" instance=ExtResource("20_ad3l7")]
+transform = Transform3D(1.0000001, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000001, 8.292175, -454.6215, -3.6565247)
+
+[node name="plant_02" parent="Decor/DecorGroup50" instance=ExtResource("21_6vwf1")]
+transform = Transform3D(1.0000001, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000001, -4.4369164, -454.59802, 4.8334885)
+
+[node name="plant_03" parent="Decor/DecorGroup50" instance=ExtResource("22_30m8a")]
+transform = Transform3D(1.0000001, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000001, 5.127571, -454.61456, -1.5972061)
+
+[node name="plant_04" parent="Decor/DecorGroup50" instance=ExtResource("23_0wjs6")]
+transform = Transform3D(1.0000001, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000001, -5.330803, -454.6488, -1.9517136)
+
+[node name="plant_05" parent="Decor/DecorGroup50" instance=ExtResource("24_t0vre")]
+transform = Transform3D(1.0000001, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000001, 4.3214417, -454.6632, -8.137238)
+
+[node name="DecorGroup51" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(-0.04922954, 0, 0.9987873, 0, 1, 0, -0.9987873, 0, -0.04922954, -97.802475, 500, 30.751373)
+scatter_radius = 12.0
+
+[node name="plant_01" parent="Decor/DecorGroup51" instance=ExtResource("20_ad3l7")]
+transform = Transform3D(1.0000002, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000002, 3.6549435, -456.77704, -5.0459137)
+
+[node name="plant_02" parent="Decor/DecorGroup51" instance=ExtResource("21_6vwf1")]
+transform = Transform3D(1.0000002, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000002, 4.721939, -456.71475, 2.90802)
+
+[node name="plant_03" parent="Decor/DecorGroup51" instance=ExtResource("22_30m8a")]
+transform = Transform3D(1.0000002, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000002, -2.7449837, -456.90524, 8.902161)
+
+[node name="plant_04" parent="Decor/DecorGroup51" instance=ExtResource("23_0wjs6")]
+transform = Transform3D(1.0000002, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000002, 0.33028984, -456.81708, 11.5456085)
+
+[node name="plant_05" parent="Decor/DecorGroup51" instance=ExtResource("24_t0vre")]
+transform = Transform3D(1.0000002, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000002, -8.292767, -457.0896, -1.3937912)
+
+[node name="DecorGroup52" parent="Decor" instance=ExtResource("9_g3gaj")]
+transform = Transform3D(0.17408763, 0, -0.98472995, 0, 1, 0, 0.98472995, 0, 0.17408763, -121.635315, 500, -97.68111)
+scatter_radius = 12.0
+
+[node name="plant_01" parent="Decor/DecorGroup52" instance=ExtResource("20_ad3l7")]
+transform = Transform3D(1.0000004, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000004, 2.059372, -455.32562, 4.8068314)
+
+[node name="plant_02" parent="Decor/DecorGroup52" instance=ExtResource("21_6vwf1")]
+transform = Transform3D(1.0000004, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000004, -6.018547, -455.2958, 2.875328)
+
+[node name="plant_03" parent="Decor/DecorGroup52" instance=ExtResource("22_30m8a")]
+transform = Transform3D(1.0000004, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000004, 10.268524, -455.24023, -3.074051)
+
+[node name="plant_04" parent="Decor/DecorGroup52" instance=ExtResource("23_0wjs6")]
+transform = Transform3D(1.0000004, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000004, 10.344315, -455.32224, 3.5545883)
+
+[node name="plant_05" parent="Decor/DecorGroup52" instance=ExtResource("24_t0vre")]
+transform = Transform3D(1.0000004, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000004, 5.753128, -455.4137, 10.440765)
 
 [node name="Holes" type="Node3D" parent="."]
 unique_name_in_owner = true
